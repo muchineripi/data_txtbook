@@ -1,4 +1,3 @@
-down-the-rabbit-hole
 getting-started-in-r-installations-and-tutorials
 r-basics-and-simulations
 data-types-sources-and-wrangling
