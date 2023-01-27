@@ -1,16 +1,11 @@
----
-title: "My Book"
-author: "John Doe"
-date: "January 1, 2021"
-documentclass: book
-output: bookdown::pdf_book
-template: bookdown::preface
+--- 
+title: "A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R"
+author: "Elias Muchineripi Mashayamombe"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
 ---
 
-This is the preface of my book. In this section, I will provide some background information on the topic of the book and explain why I decided to write it. I will also give a brief overview of the contents of the book and what readers can expect to learn from it.
+\preface
 
-I have always been interested in the field of XYZ, and I wanted to share my knowledge and insights with others. I hope that this book will serve as a useful resource for anyone who is interested in learning more about XYZ.
+This is the preface for my book.
 
-I would like to thank all the people who have supported me during the writing of this book, including my family, friends, and colleagues. Without their help, this book would not have been possible.
-
-Thank you for reading this preface, and I hope you enjoy the book!
