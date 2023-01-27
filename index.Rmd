@@ -5,4 +5,6 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+\preface
+
+This is the preface for my book.
