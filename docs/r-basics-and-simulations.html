@@ -142,9 +142,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#what-is-r"><i class="fa fa-check"></i><b>2.2</b> What is R?</a></li>
 <li class="chapter" data-level="2.3" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r"><i class="fa fa-check"></i><b>2.3</b> Downloading and Installing R</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r-and-r-packages"><i class="fa fa-check"></i><b>2.4</b> Getting Started in R and R Packages</a></li>
+<li class="chapter" data-level="2.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r"><i class="fa fa-check"></i><b>2.4</b> Getting Started in R</a></li>
+<li class="chapter" data-level="2.5" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#exercises-1"><i class="fa fa-check"></i><b>2.5</b> Exercises 1:</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>3</b> R Basics and Simulations</a></li>
+<li class="chapter" data-level="3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>3</b> R Basics and Simulations</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#packages-in-r"><i class="fa fa-check"></i><b>3.1</b> Packages in R</a></li>
+<li class="chapter" data-level="3.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>3.2</b> For Loops</a></li>
+<li class="chapter" data-level="3.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>3.3</b> While Loops</a></li>
+<li class="chapter" data-level="3.4" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>3.4</b> Simulations</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>4</b> Data types, sources, and wrangling</a></li>
 <li class="chapter" data-level="5" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>5</b> A caucus-race and a long tale</a></li>
 <li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a></li>
@@ -175,7 +182,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="r-basics-and-simulations" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Chapter 3</span> R Basics and Simulations<a href="r-basics-and-simulations.html#r-basics-and-simulations" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="packages-in-r" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Packages in R<a href="r-basics-and-simulations.html#packages-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Packages in R are collections of functions, data, and documentation that extend the functionality of base R. They provide additional functionality, such as statistical models, data manipulation and visualization tools, machine learning algorithms, and more. Packages are created by members of the R community and are made available for others to use as mentioned in the previous chapter. To use a package in R, you need to install it on your computer and then load it into your current R session. This can be done using the install.packages() function, followed by the library() or require() function. The library and require functions in R are used to load packages into the current R session. They both have the same basic function, but there are some differences in their behavior. The library function will throw an error if the package you are trying to load is not installed on your computer. The require function, on the other hand, will not throw an error if the package you are trying to load is not installed. Instead, it will return FALSE if the package is not installed, and TRUE if the package is successfully loaded. Therefore, the main difference between library and require is that library will throw an error if the package you are trying to load is not installed, while require will not throw an error, but instead return FALSE if the package is not installed. In general, the library function is more commonly used, as it provides a clear error message if the required package is not installed.</p>
+<p>One package I always load whenever I get into RStudio is tidyverse. The tidyverse is a collection of packages in R that are designed for data science and data analysis. The package is built around the concept of “tidy data,” which refers to a specific structure for data where each variable is in a separate column, each observation is in a separate row, and each type of observational unit is in a separate table. The tidyverse packages are designed to make it easy to work with data in this structure, and they provide a variety of tools for data manipulation, visualization, and modeling.
+The tidyverse package itself is a meta-package that provides a convenient way to install and load multiple packages in the tidyverse ecosystem. When you install the tidyverse package, you will also install several other packages, including:</p>
+<ul>
+<li>ggplot2: a popular data visualization package</li>
+<li>dplyr: a fast and efficient data manipulation package</li>
+<li>tidyr: a package for cleaning and transforming data into a tidy format</li>
+<li>readr: a fast and efficient data import package</li>
+<li>purrr: a functional programming package for R</li>
+<li>stringr: a package for working with strings</li>
+<li>lubridate: a package for working with dates and times</li>
+</ul>
+<p>By installing the tidyverse package, you will have access to a wide range of tools for working with data in R, and you can easily load all these packages into your R session with a single command. The tidyverse packages are widely used in the R community and are well-documented, so it is easy to find help and resources online if you need it.
+Use the code below to install the tidyverse package:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="r-basics-and-simulations.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;tidyverse&quot;)</span></span></code></pre></div>
+</div>
+<div id="for-loops" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> For Loops<a href="r-basics-and-simulations.html#for-loops" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="while-loops" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> While Loops<a href="r-basics-and-simulations.html#while-loops" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="simulations" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Simulations<a href="r-basics-and-simulations.html#simulations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We will get to the use of data, but it is important to note that you can do simulations without any data.</p>
 
+</div>
 </div>
             </section>
 
