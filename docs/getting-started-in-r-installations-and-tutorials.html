@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
-  <meta name="description" content="A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <title>Chapter 2 Getting started in R (Installations and tutorials) | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
+  <meta name="description" content="Chapter 2 Getting started in R (Installations and tutorials) | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta property="og:title" content="Chapter 2 Getting started in R (Installations and tutorials) | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta name="twitter:title" content="Chapter 2 Getting started in R (Installations and tutorials) | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   
   
   
@@ -23,14 +23,14 @@
 <meta name="author" content="Elias Muchineripi Mashayamombe" />
 
 
-<meta name="date" content="2023-01-27" />
+<meta name="date" content="2023-01-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="index.html"/>
 <link rel="next" href="r-basics-and-simulations.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -54,6 +54,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -72,17 +136,24 @@
 <li><a href="./">Data in R</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html"><i class="fa fa-check"></i><b>1</b> Getting started in R (Installations and tutorials)</a></li>
-<li class="chapter" data-level="2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>2</b> R Basics and Simulations</a></li>
-<li class="chapter" data-level="3" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>3</b> Data types, sources, and wrangling</a></li>
-<li class="chapter" data-level="4" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>4</b> A caucus-race and a long tale</a></li>
-<li class="chapter" data-level="5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Simple Linear Regression</a></li>
-<li class="chapter" data-level="6" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>6</b> Multiple Regression</a></li>
-<li class="chapter" data-level="7" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>7</b> Logit and probit Models</a></li>
-<li class="chapter" data-level="8" data-path="time-series-analysis-arima-models.html"><a href="time-series-analysis-arima-models.html"><i class="fa fa-check"></i><b>8</b> Time Series Analysis – ARIMA Models</a></li>
-<li class="chapter" data-level="9" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>9</b> VAR and SVAR</a></li>
-<li class="chapter" data-level="10" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>10</b> Panel data Analysis</a></li>
-<li class="chapter" data-level="11" data-path="an-introduction-to-machine-learning-algorithms.html"><a href="an-introduction-to-machine-learning-algorithms.html"><i class="fa fa-check"></i><b>11</b> An Introduction to Machine Learning Algorithms</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
+<li class="chapter" data-level="2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html"><i class="fa fa-check"></i><b>2</b> Getting started in R (Installations and tutorials)</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#what-is-r"><i class="fa fa-check"></i><b>2.2</b> What is R?</a></li>
+<li class="chapter" data-level="2.3" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r"><i class="fa fa-check"></i><b>2.3</b> Downloading and Installing R</a></li>
+<li class="chapter" data-level="2.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r-and-r-packages"><i class="fa fa-check"></i><b>2.4</b> Getting Started in R and R Packages</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>3</b> R Basics and Simulations</a></li>
+<li class="chapter" data-level="4" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>4</b> Data types, sources, and wrangling</a></li>
+<li class="chapter" data-level="5" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>5</b> A caucus-race and a long tale</a></li>
+<li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a></li>
+<li class="chapter" data-level="7" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>7</b> Multiple Regression</a></li>
+<li class="chapter" data-level="8" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>8</b> Logit and probit Models</a></li>
+<li class="chapter" data-level="9" data-path="time-series-analysis-arima-models.html"><a href="time-series-analysis-arima-models.html"><i class="fa fa-check"></i><b>9</b> Time Series Analysis – ARIMA Models</a></li>
+<li class="chapter" data-level="10" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>10</b> VAR and SVAR</a></li>
+<li class="chapter" data-level="11" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>11</b> Panel data Analysis</a></li>
+<li class="chapter" data-level="12" data-path="an-introduction-to-machine-learning-algorithms.html"><a href="an-introduction-to-machine-learning-algorithms.html"><i class="fa fa-check"></i><b>12</b> An Introduction to Machine Learning Algorithms</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -102,22 +173,109 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</h1>
-<p class="author"><em>Elias Muchineripi Mashayamombe</em></p>
-<p class="date"><em>2023-01-27</em></p>
+<div id="getting-started-in-r-installations-and-tutorials" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Getting started in R (Installations and tutorials)<a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r-installations-and-tutorials" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="introduction" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Introduction<a href="getting-started-in-r-installations-and-tutorials.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data analysis is a set of skills that is a must in any industry or profession, so you have done well taking this course. Congratulations! Some of the industries that frequently require the services of data analysts include:</p>
+<ul>
+<li>Finance: Data analysts help financial organizations make informed decisions by analyzing large amounts of data related to investments, financial markets, and other financial products.</li>
+<li>Healthcare: Data analysts play a crucial role in analyzing patient data to improve patient outcomes, reduce costs, and support research and development efforts.</li>
+<li>Retail: Retail companies use data analysts to understand consumer behavior and preferences, improve supply chain management, and increase sales and profits.</li>
+<li>Technology: Data analysts are essential in the technology industry, where they help organizations make decisions about product development, marketing, and other important business initiatives.</li>
+<li>Manufacturing: Data analysts in the manufacturing industry help companies improve processes, reduce costs, and increase efficiency.</li>
+<li>Government: Government agencies use data analysts to analyze data related to public health, safety, and security, as well as to make informed policy decisions.</li>
+<li>Transportation: Data analysts in the transportation industry help companies optimize routes, reduce costs, and improve safety.</li>
+<li>Marketing and Advertising: Data analysts are key players in the marketing and advertising industry, where they help companies understand consumer behavior and preferences, and develop effective marketing campaigns.</li>
+</ul>
+<p>This list is not exhaustive and data analysis skills are needed in many other industries and organizations as well. The importance of data analysis continues to grow in today’s data-driven world, and the demand for skilled data analysts is expected to continue to increase in the coming years. There are many different aspects to data analysis, such as collecting and cleaning data, visualizing data, and building models to make predictions. This book takes you though all these different aspects of data analysis and ends with an introduction to building machine learning models. All the data analysis in this book will be done in R.</p>
 </div>
-<div id="getting-started-in-r-installations-and-tutorials" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Getting started in R (Installations and tutorials)<a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r-installations-and-tutorials" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="what-is-r" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> What is R?<a href="getting-started-in-r-installations-and-tutorials.html#what-is-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R is a programming language and software environment for statistical computing and graphics. It is widely used for data analysis and statistical modeling in a variety of fields, including finance, medicine, and social sciences. R has many features that make it well-suited for data analysis, such as a large collection of built-in functions for data manipulation and visualization, the ability to handle large and complex data sets, and a wide range of libraries and packages for specific tasks, such as machine learning, text mining, and spatial analysis. It also has a strong interactive environment, which allows for quick prototyping and exploration of data.
+R is open-source software, which means that it is free to use and distribute and that the source code is available for users to modify and improve. It has a large community of users and developers who contribute to its development and share their work in the form of libraries and packages. This means that R will always be able to perform the newest statistical analyses as soon as anyone thinks of them, fix its bugs quickly and transparently. It also brings together a community of programming and statistics nerds also known as useRs, that one can turn to for help. R is a good option if one is doing something sophisticated because of its flexibility, unlike point-and-click program programs. R is the most powerful data visualization tool known to date. Other traditional software like EViews can work with R data and send R commands to execute. R is increasingly being used as an industry standard in the realm of data analytics, also known as data science. Many companies (e.g., Facebook, Merck, Pfizer) recruit candidates who have a solid grasp of both statistics and programming hence learning R will make you more attractive in the job market.</p>
+<p><em>It is easy to get frustrated and discouraged when it comes to programming but if you are patient, you will come to appreciate the unequal power of R when it comes to data analysis and visualization.</em></p>
+<p>Like in other programming languages, you can save your work as scripts that can be easily executed at any moment. These scripts serve as a record of the analysis you performed, a key feature that facilitates reproducible work. One of its major strengths is visualization.</p>
+</div>
+<div id="downloading-and-installing-r" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Downloading and Installing R<a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To use R we need to download R and RStudio. These are two separate software. RStudio will be our launching pad for data science projects and you will realize later on that it provides a lot of other tools that will help use in crease our efficiency. Search R using the Google search engine or any other search engine of your choice. R is available for MAC, Windows, or any other operating system like Linux. Alternatively follow the instructions below:</p>
+<p>To Install R:
+Open an internet browser and go to www.r-project.org. Find R for your operating system, download and save the executable file anywhere in your PC. Run the .exe file and follow instructions as you install.</p>
+<p>To Install RStudio:
+Go to www.rstudio.com and click on the “Download RStudio” button. Click on “Download RStudio Desktop,” click on the version recommended for your system, or the latest Windows version, and save the executable file. Run the .exe file and follow the installation instructions.</p>
+<p><strong>Note:</strong> Before we continue, I want you to take note of this, we are never going to be using the R console directly, all our work will be done in R studio. If you double-click R the console will look something like this:</p>
+<h1 style="text-align:center;">
+The Console
+</h1>
+<p align="center">
+<img src="fig1.png" alt="R Console">
+</p>
+<p>At the time of writing the name of this version was “Funny-Looking Kid” as shown above. You can execute commands directly in this console, but we are not going to do that. Close the console and open RStudio. We will be using the interactive integrated development environment (IDE) RStudio.</p>
+<p>Once you open RStudio you will see something like this:</p>
+<h1 style="text-align:center;">
+RStudio Screen
+</h1>
+<p align="center">
+<img src="fig3.png" alt="First time opening RStudio">
+</p>
+<p>To start a new script, you can click on File, the New File, then R Script. I use windows and I usually just use the short-cut ctr+Shift+N. These gives you the four panels of RStudio. Once you have a new script, a typical RStudio screen looks like the one below:</p>
+<h1 style="text-align:center;">
+RStudio Panels
+</h1>
+<p align="center">
+<img src="fig2.png" alt="The Quadrants">
+</p>
+<p>The panels or windows that make up the RStudio interface are:</p>
+<ul>
+<li>The Source Editor: This is the main window in RStudio where you can write, edit, and save R scripts and R Markdown files.</li>
+<li>The Console: This is where you can interact with the R environment, enter commands, and see the results of your commands.</li>
+<li>The Environment/History/Connections Panel: This panel displays information about the current R environment, including the objects in your workspace, the history of your R commands, and the connections to any databases or other resources.</li>
+<li>The Files/Plots/Packages/Help Panel: This panel provides access to your project files and directories, the plots and graphs you create, the packages you have installed, and the help documentation for R functions and packages.
+These four quadrants are designed to work together to provide a comprehensive and user-friendly environment for working with R.</li>
+</ul>
+<p>R comes a couple of data sets to get you started. You will see in the bottom right quadrant it explains student’s sleep data. To see all these data sets in r-base you can type this in the source editor:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="getting-started-in-r-installations-and-tutorials.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>()</span></code></pre></div>
+<p>The data set in opened in another file and if you want a particular dataset to be explained you use the following code.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="getting-started-in-r-installations-and-tutorials.html#cb2-1" aria-hidden="true" tabindex="-1"></a>?EuStockMarkets</span></code></pre></div>
+<p>This explains the nature of the Euro Stock Markets data in the fourth quadrant.</p>
+</div>
+<div id="getting-started-in-r-and-r-packages" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Getting Started in R and R Packages<a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r-and-r-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To save you script use file, save as and choose a name. Call it fist_file, use a n underscore to separate the words</p>
+<h1 style="text-align:center;">
+Save Script
+</h1>
+<p align="center">
+<img src="fig2.png" alt="Saving Script">
+</p>
+<p>To save object in R we use the less than sign (&lt;) followed by a minus (-) like this &lt;-, and this is know as an assignment operator in R. We are going to use this for a quaratic equation. Suppose you have the quadratic equation: <span class="math display">\[ 3y^2 + 4y - 2 = 0\]</span>
+You will recall that to use the quadratic equation:
+<span class="math display">\[ y = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</span></p>
+<p><span class="math display">\[ a = 3, \quad b = 4 \quad \&amp; \quad c = -2 \]</span>
+Let’s put these in RStudio using our script. Use the code below:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb3-2"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">4</span></span>
+<span id="cb3-3"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-3" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="sc">-</span><span class="dv">2</span></span>
+<span id="cb3-4"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-5" aria-hidden="true" tabindex="-1"></a>y_1 <span class="ot">&lt;-</span> (<span class="sc">-</span>b <span class="sc">+</span> <span class="fu">sqrt</span>(b<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">4</span><span class="sc">*</span>a<span class="sc">*</span>c))<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>a)</span>
+<span id="cb3-6"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-6" aria-hidden="true" tabindex="-1"></a>y_2 <span class="ot">&lt;-</span> (<span class="sc">-</span>b <span class="sc">-</span> <span class="fu">sqrt</span>(b<span class="sc">^</span><span class="dv">2</span> <span class="sc">-</span> <span class="dv">4</span><span class="sc">*</span>a<span class="sc">*</span>c))<span class="sc">/</span>(<span class="dv">2</span><span class="sc">*</span>a)</span>
+<span id="cb3-7"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="getting-started-in-r-installations-and-tutorials.html#cb3-8" aria-hidden="true" tabindex="-1"></a>y_1; y_2</span></code></pre></div>
+<pre><code>## [1] 0.3874259</code></pre>
+<pre><code>## [1] -1.720759</code></pre>
+<p>You should get 0.39 and -1,72 as your answers. I hope you found this exercise interesting. Try a couple of quadratic equations yourself and see if you get the answers right.</p>
+<p>As mentioned earlier, R is open sources and so many users make packages to make it easier to use</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="r-basics-and-simulations.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="r-basics-and-simulations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -171,6 +329,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
