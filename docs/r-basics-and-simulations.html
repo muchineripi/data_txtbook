@@ -148,12 +148,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>3</b> R Basics and Simulations</a>
 <ul>
 <li class="chapter" data-level="3.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#packages-in-r"><i class="fa fa-check"></i><b>3.1</b> Packages in R</a></li>
-<li class="chapter" data-level="3.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>3.2</b> For Loops</a></li>
-<li class="chapter" data-level="3.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>3.3</b> While Loops</a></li>
-<li class="chapter" data-level="3.4" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>3.4</b> Simulations</a></li>
+<li class="chapter" data-level="3.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#loops"><i class="fa fa-check"></i><b>3.2</b> LOOPS</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>3.2.1</b> For Loops</a></li>
+<li class="chapter" data-level="3.2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>3.2.2</b> While Loops</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>3.3</b> Simulations</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>4</b> Data types, sources, and wrangling</a></li>
-<li class="chapter" data-level="5" data-path="a-caucus-race-and-a-long-tale.html"><a href="a-caucus-race-and-a-long-tale.html"><i class="fa fa-check"></i><b>5</b> A caucus-race and a long tale</a></li>
+<li class="chapter" data-level="5" data-path="descriptive-studies.html"><a href="descriptive-studies.html"><i class="fa fa-check"></i><b>5</b> Descriptive studies</a></li>
 <li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a></li>
 <li class="chapter" data-level="7" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>7</b> Multiple Regression</a></li>
 <li class="chapter" data-level="8" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>8</b> Logit and probit Models</a></li>
@@ -199,15 +202,52 @@ The tidyverse package itself is a meta-package that provides a convenient way to
 <p>By installing the tidyverse package, you will have access to a wide range of tools for working with data in R, and you can easily load all these packages into your R session with a single command. The tidyverse packages are widely used in the R community and are well-documented, so it is easy to find help and resources online if you need it.
 Use the code below to install the tidyverse package:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="r-basics-and-simulations.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;tidyverse&quot;)</span></span></code></pre></div>
+<p>Remove the # signto run the code. The # sign is used to write comments in R.</p>
 </div>
-<div id="for-loops" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> For Loops<a href="r-basics-and-simulations.html#for-loops" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="loops" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> LOOPS<a href="r-basics-and-simulations.html#loops" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A loop is a repeating set of instructions in a computer program that allows you to automate tasks. The loop will keep running until a specific condition is met. The purpose of loops is to perform a set of operations multiple times, either a specified number of times or until a certain condition is met.
+For example, imagine you need to print the numbers 1 to 10. Instead of writing out each number, you can use a loop to automate the task. The loop will keep running 10 times, printing each number until it reaches 10.
+In simple terms, a loop is like a machine that can perform the same task repeatedly, until you tell it to stop. This can save you a lot of time and effort, especially when working with large amounts of data. Loops are important in data analysis because they allow you to automate repetitive tasks, which can save time and reduce the risk of errors. In data analysis, it is often necessary to perform the same operation on multiple sets of data, such as summarizing data or transforming data into a different format. Loops allow you to perform these operations in an efficient and systematic manner.
+For example, imagine you have a large dataset with 100 variables, and you need to calculate the mean and standard deviation of each variable. Instead of manually calculating these statistics for each variable, you can use a loop to automate the process. This will not only save time but also reduce the risk of errors, since it eliminates the need for manual calculation.
+In addition to automating repetitive tasks, loops can also help you write code that is more readable and maintainable. By using a loop, you can encapsulate a set of operations in a single block of code, making it easier to understand what the code is doing and reducing the need for repetitive code.
+Overall, loops are an essential tool in data analysis, allowing you to automate repetitive tasks, reduce errors, and write more readable and maintainable code.</p>
+<div id="for-loops" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> For Loops<a href="r-basics-and-simulations.html#for-loops" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In R, a for loop is used to repeat a set of statements multiple times. The basic structure of a for loop is given by:</p>
+<h1 style="text-align:center;">
+For Loop Structure
+</h1>
+<p align="center">
+<img src="fig5.png" alt="Structure of a for loop in R">
+</p>
+<p>source: <a href="https://www.geeksforgeeks.org/for-loop-in-r/" class="uri">https://www.geeksforgeeks.org/for-loop-in-r/</a></p>
+<p>The basic syntax of a for loop in R is as follows:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="r-basics-and-simulations.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#for (variable in sequence) {</span></span>
+<span id="cb7-2"><a href="r-basics-and-simulations.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#  statements</span></span>
+<span id="cb7-3"><a href="r-basics-and-simulations.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#}</span></span></code></pre></div>
+<p>Where:</p>
+<p>variable is a variable that will be used to keep track of the current iteration of the loop.
+sequence is a vector or other data structure that defines the values that variable will take on during each iteration of the loop.
+statements are the R statements that will be executed during each iteration of the loop.
+Here is a simple example of a for loop in R:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="r-basics-and-simulations.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
+<span id="cb8-2"><a href="r-basics-and-simulations.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb8-3"><a href="r-basics-and-simulations.html#cb8-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5</code></pre>
+<p>This code will print the numbers 1 through 5. On the first iteration of the loop, i will be 1, on the second iteration i will be 2, and so on, until the loop has completed 5 iterations and i has taken on the value 5.</p>
+<p>Note that in R, for loops are generally not as efficient as other types of loops, and they can be difficult to read and debug. In many cases, it is recommended to use alternative constructs such as sapply or lapply instead. However, in some cases, a for loop can still be a useful tool for solving problems in R.</p>
 </div>
-<div id="while-loops" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> While Loops<a href="r-basics-and-simulations.html#while-loops" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="while-loops" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> While Loops<a href="r-basics-and-simulations.html#while-loops" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-<div id="simulations" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Simulations<a href="r-basics-and-simulations.html#simulations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="simulations" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Simulations<a href="r-basics-and-simulations.html#simulations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will get to the use of data, but it is important to note that you can do simulations without any data.</p>
 
 </div>
