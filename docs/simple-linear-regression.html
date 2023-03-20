@@ -23,7 +23,7 @@
 <meta name="author" content="Elias Muchineripi Mashayamombe" />
 
 
-<meta name="date" content="2023-01-30" />
+<meta name="date" content="2023-03-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -157,7 +157,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>4</b> Data types, sources, and wrangling</a></li>
 <li class="chapter" data-level="5" data-path="descriptive-studies.html"><a href="descriptive-studies.html"><i class="fa fa-check"></i><b>5</b> Descriptive studies</a></li>
-<li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a></li>
+<li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-history"><i class="fa fa-check"></i><b>6.1</b> Regression History</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#galton-heights-data"><i class="fa fa-check"></i><b>6.1.1</b> Galton Heights Data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#getting-started-the-simple-regression-model"><i class="fa fa-check"></i><b>6.2</b> Getting Started The Simple Regression Model</a></li>
+<li class="chapter" data-level="6.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#ordinary-least-squares-estimations"><i class="fa fa-check"></i><b>6.3</b> Ordinary Least Squares Estimations</a></li>
+</ul></li>
 <li class="chapter" data-level="7" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>7</b> Multiple Regression</a></li>
 <li class="chapter" data-level="8" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>8</b> Logit and probit Models</a></li>
 <li class="chapter" data-level="9" data-path="time-series-analysis-arima-models.html"><a href="time-series-analysis-arima-models.html"><i class="fa fa-check"></i><b>9</b> Time Series Analysis – ARIMA Models</a></li>
@@ -185,8 +193,169 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="simple-linear-regression" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Simple Linear Regression<a href="simple-linear-regression.html#simple-linear-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Simple regression analysis.</p>
+<p>Understanding how variables are related is critical in data analysis. One of the most basic models used to understand relationships between different variables is called the simple regression model. The simple regression model is used to examine the relationship between two variables.</p>
+<div id="regression-history" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Regression History<a href="simple-linear-regression.html#regression-history" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The term “regression” in data analysis was first introduced by Sir Francis Galton in the late 19th century. Galton was a British polymath who made important contributions to a wide range of fields, including statistics, psychology, and biology. Galton was interested in the relationship between the heights of fathers and their sons, and he observed that while the heights of sons tended to be closer to the average height of the population as a whole, they also tended to be closer to the average height of their fathers than to the population average. Galton called this phenomenon “regression to the mean”.</p>
+<p>The term “regression” referred to the idea that, over time, extreme values tend to move back towards the average or mean value. This idea was later applied to statistical models in a variety of fields, including economics, and the term “regression” became a standard part of the statistical and econometric lexicon. Today, regression analysis is a widely used statistical technique in economics, finance, biology etc. and this technique is used to estimate the relationship between a dependent variable and one or more independent variables. The goal is to identify the extent to which changes in the independent variables are associated with changes in the dependent variable.</p>
+<div id="galton-heights-data" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Galton Heights Data<a href="simple-linear-regression.html#galton-heights-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The HistData package gives us access to Galton’s family height data. Lets load this into RStudio and expore a few things about the data. The code data(“GaltonFamilies”) loads the “GaltonFamilies” dataset into R from the package. This dataset contains information on the heights of parents and their children, as collected by Sir Francis Galton in the late 19th century. The “HistData” package, which contains a collection of historical datasets that are useful for teaching and research in statistics and data science. You can explore the data set for your learning purposes. If the package is not already installed in your R environment, you may need to install it using the install.packages(“HistData”) command before you can load the dataset. Once the dataset is loaded, you can use R functions to explore and analyze its contents. For example, you might use the summary() function to get an overview of the dataset’s variables and their distributions, or the plot() function to create visualizations of the data.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="simple-linear-regression.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the HistData package.</span></span>
+<span id="cb1-2"><a href="simple-linear-regression.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="simple-linear-regression.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(HistData)</span>
+<span id="cb1-4"><a href="simple-linear-regression.html#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="simple-linear-regression.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># load the GaltonFamilies dataset from the HistData package into the R session</span></span>
+<span id="cb1-6"><a href="simple-linear-regression.html#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">&quot;GaltonFamilies&quot;</span>)</span>
+<span id="cb1-7"><a href="simple-linear-regression.html#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="simple-linear-regression.html#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="simple-linear-regression.html#cb1-9" aria-hidden="true" tabindex="-1"></a>galton_heights <span class="ot">&lt;-</span> GaltonFamilies <span class="sc">%&gt;%</span> </span>
+<span id="cb1-10"><a href="simple-linear-regression.html#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(gender <span class="sc">==</span> <span class="st">&quot;male&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-11"><a href="simple-linear-regression.html#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(family) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-12"><a href="simple-linear-regression.html#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sample_n</span>(<span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-13"><a href="simple-linear-regression.html#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-14"><a href="simple-linear-regression.html#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(father, childHeight) <span class="sc">%&gt;%</span></span>
+<span id="cb1-15"><a href="simple-linear-regression.html#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">son =</span> childHeight)</span>
+<span id="cb1-16"><a href="simple-linear-regression.html#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="simple-linear-regression.html#cb1-17" aria-hidden="true" tabindex="-1"></a>galton_heights <span class="sc">%&gt;%</span> </span>
+<span id="cb1-18"><a href="simple-linear-regression.html#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="fu">mean</span>(father), <span class="fu">sd</span>(father), <span class="fu">mean</span>(son), <span class="fu">sd</span>(son))</span></code></pre></div>
+<pre><code>## # A tibble: 1 × 4
+##   `mean(father)` `sd(father)` `mean(son)` `sd(son)`
+##            &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;
+## 1           69.1         2.55        69.2      2.51</code></pre>
+<p>Though this code looks intimidating, there is not much to it really. We will expalin it line by line. When anything is not clear, feel free to use the code documentation, stack overflow or any AI tool like chatGPT, which is my favourite.</p>
+<p>This code creates a new data frame called galton_heights, which contains information on the heights of fathers and their first-born sons:</p>
+<ul>
+<li>‘GaltonFamilies %&gt;%’: This pipes the GaltonFamilies dataset into a series of data transformation functions.</li>
+<li>‘filter(gender == “male”) %&gt;%’: This filters the data to include only observations where the child is male.</li>
+<li>‘group_by(family) %&gt;%’: This groups the data by family, so that we can select one observation (i.e., the first-born son) per family in the next step.</li>
+<li>‘sample_n(1) %&gt;%’: This selects one observation per family at random.
+ungroup() %&gt;%: This removes the grouping by family, so that we can select specific variables in the next step.</li>
+<li>‘select(father, childHeight) %&gt;%’: This selects the variables father and childHeight (i.e., the height of the father and the height of the first-born son).
+rename(son = childHeight): This renames the childHeight variable to son.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="simple-linear-regression.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter Plot</span></span>
+<span id="cb3-2"><a href="simple-linear-regression.html#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="simple-linear-regression.html#cb3-3" aria-hidden="true" tabindex="-1"></a>galton_heights <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(father, son)) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="simple-linear-regression.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/Galton2-1.png" width="672" /></p>
+<p>The code ‘geom_point(alpha = 0.5)’ adds a layer to the cose using a ‘+’ and it specifies that the plot should be made using points, with a transparency level (alpha) of 0.5. The geom_point function is used to create the scatter plot.</p>
+</div>
+</div>
+<div id="getting-started-the-simple-regression-model" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Getting Started The Simple Regression Model<a href="simple-linear-regression.html#getting-started-the-simple-regression-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Think about this: if you study this course for two hours every week, do you think you will pass it and with what mark? Now imagine you study this course for ten hours a week putting 2 hours everyday, Monday to Friday, one hour understanding the theory and another hour coding, how is your final mark likely to change? I am going to assume you would expect a higher mark if you put in the hours? This is perfect example of how two variable, marks and hours of study are related. Your final mark clearly depends on the hours you spend studying hence the final mark is called the dependent variable whilst the hours spent studying are called the independent variable. For simplicity and as is standard in literature, we are going to call the dependent variable <span class="math inline">\(Y\)</span> and the independent variable <span class="math inline">\(X\)</span>. The dependent variable is also called regressand or the explained, response or predicted variable whilst the independent variable is also called the regressor or the explanatory, control or predictor variable. Just know these words can be used interchangeably but for the avoidance of confusion, we will stick to dependent and independent variables.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="simple-linear-regression.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tidyverse package. ggplot2 is part of this package</span></span>
+<span id="cb4-2"><a href="simple-linear-regression.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb4-3"><a href="simple-linear-regression.html#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="simple-linear-regression.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load the hours of study and marks respectively</span></span>
+<span id="cb4-5"><a href="simple-linear-regression.html#cb4-5" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">14</span>, <span class="dv">15</span>)</span>
+<span id="cb4-6"><a href="simple-linear-regression.html#cb4-6" aria-hidden="true" tabindex="-1"></a>Y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">15</span>, <span class="dv">15</span>, <span class="dv">18</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">39</span>, <span class="dv">45</span>, <span class="dv">44</span>, <span class="dv">55</span>, <span class="dv">63</span>, <span class="dv">65</span>, <span class="dv">72</span>, <span class="dv">79</span>, <span class="dv">82</span>)</span>
+<span id="cb4-7"><a href="simple-linear-regression.html#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="simple-linear-regression.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Save the data i a frame as mark_sheet</span></span>
+<span id="cb4-9"><a href="simple-linear-regression.html#cb4-9" aria-hidden="true" tabindex="-1"></a>mark_sheet <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(X, Y)</span>
+<span id="cb4-10"><a href="simple-linear-regression.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">#View(mark_sheet)</span></span>
+<span id="cb4-11"><a href="simple-linear-regression.html#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="simple-linear-regression.html#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the scatter plot using ggplot2</span></span>
+<span id="cb4-13"><a href="simple-linear-regression.html#cb4-13" aria-hidden="true" tabindex="-1"></a>scatter_1 <span class="ot">&lt;-</span> mark_sheet <span class="sc">%&gt;%</span> <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> X, <span class="at">y =</span> Y)) <span class="sc">+</span> </span>
+<span id="cb4-14"><a href="simple-linear-regression.html#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() </span>
+<span id="cb4-15"><a href="simple-linear-regression.html#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="simple-linear-regression.html#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the scatter plot</span></span>
+<span id="cb4-17"><a href="simple-linear-regression.html#cb4-17" aria-hidden="true" tabindex="-1"></a>scatter_1</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/scatter1-1.png" width="672" /></p>
+<p>What we can seen from the scatter plot is that there is an obvious positive relationship between the time one puts into studying and the final mark, that is, the more one studies, the higher the final mark is likely to be.</p>
+<p>The idea is to estimate a perfect straight line relationship between these variables and this relationship takes the form:</p>
+<p><span class="math display">\[\begin{equation}
+y = \beta_0 + \beta_1x + \upsilon \tag{1}
+\end{equation}\]</span></p>
+<p>For a given population, equation (1) defines the simple linear regression model which is also called the two-variable linear regression model or bivariate linear regression model because it relates the two variables x and y. We will discuss more simple linear relationships in this section but for now, we have to understand how we get this relationship. We will use the ordinary least sqaured regression method.</p>
+</div>
+<div id="ordinary-least-squares-estimations" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Ordinary Least Squares Estimations<a href="simple-linear-regression.html#ordinary-least-squares-estimations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We will use the hours of study and marks dataset to understand ordinary least squares regression, simply known as OLS. The idea behind OLS is to find a linear relationship that minimizes the sum of the squared residuals or errors. The values we have from our sample are the actual values and the values obtained by estimating a straight line are called the predicted values. The residual or the error is the difference between the actual values and the estimated values. Consider the values give in the table below that we have have already used to get our scatter plot.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Hours/week</th>
+<th align="right">Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">2</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">15</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="right">5</td>
+<td align="right">18</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">25</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">28</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">39</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">45</td>
+</tr>
+<tr class="odd">
+<td align="right">10</td>
+<td align="right">44</td>
+</tr>
+<tr class="even">
+<td align="right">11</td>
+<td align="right">55</td>
+</tr>
+<tr class="odd">
+<td align="right">12</td>
+<td align="right">63</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">65</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="right">72</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="right">79</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="right">82</td>
+</tr>
+</tbody>
+</table>
+<p>The equation that relates these variables is given by:</p>
+<p><span class="math display">\[\begin{equation}
+y_i = \beta_0 + \beta_1x_i + \upsilon_i \tag{2}
+\end{equation}\]</span></p>
+<p>Where <span class="math inline">\({(x_i, y_i): i = 1,.....,n}\)</span> denote a random sample of size <span class="math inline">\(n\)</span> from the population. In our case, the <span class="math inline">\(n = 15\)</span>. <span class="math inline">\(\upsilon_i\)</span> is the residual term for each observation <span class="math inline">\(i\)</span> because it contains all factors affecting <span class="math inline">\(y_i\)</span> other than just <span class="math inline">\(x_i\)</span>. We assume that the expected value of the residuals is zero, that is:</p>
+<p><span class="math display">\[\begin{equation}
+E(\upsilon_i) = 0 \tag{3}
+\end{equation}\]</span></p>
+<p>The graph below shows the predicted straight, red, and the difference points obtained from our scatter plot.</p>
+<p><img src="bookdownproj_files/figure-html/residuals1-1.png" width="672" /></p>
+<p>The difference between the actual observed points and the estimated line is what we are calling the residual.</p>
 
+</div>
 </div>
             </section>
 
