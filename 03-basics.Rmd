@@ -48,7 +48,7 @@ The basic syntax of a for loop in R is as follows:
 ```{r forloop}
 #for (variable in sequence) {
 #  statements
-#}
+# }
 ```
 
 Where:

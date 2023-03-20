@@ -1,1 +1,56 @@
-# An Introduction to Machine Learning Algorithms
+# Machine Learning
+
+How do we communicate the patterns of desired behavior for baking bread? We can teach:
+
+- by instruction: "to make bread, you need flour, yeast, salt, and water. Mix them together and knead the dough for 10 minutes."
+- by example: "here are six loaves of perfect bread; here, six loaves of burnt bread. see a pattern?"
+- by reinforcement: "bake bread every day for a month; learn from the texture, color, and taste of each loaf."
+
+Machine learning is the art of programming computers to learn from such sources, and in this case, it would involve teaching a machine learning algorithm to recognize the patterns of successful bread baking based on examples.
+
+Statistical approaches and machine learning techniques are both ways of understanding a process by analyzing observations, but they have different assumptions and methods. Statistical approaches use strict rules and models to explain observations, while machine learning is more flexible and uses large amounts of data to find patterns and make predictions without human input. Machine learning is particularly useful for complex problems with many variables or non-linear systems. This chapter introduces machine learning methodologies but does not get into too much detail. 
+
+## Introduction to Machine Learning
+
+There are three types of machine learning: supervised learning, unsupervised learning, and deep learning/reinforcement learning.
+
+### Supervised Learning
+
+Supervised learning is a type of machine learning technique where the algorithm learns to predict an output value based on input data, while being trained on labeled examples. In supervised learning, the algorithm is provided with a labeled dataset, which means that each example in the dataset is paired with the correct output value. The algorithm then learns to map the input to the output by adjusting its parameters, with the goal of minimizing the difference between the predicted output and the correct output for each labeled example. Once the algorithm has learned from the labeled dataset, it can make predictions on new, unlabeled data by applying the learned mapping function. Examples of supervised learning include predicting housing prices based on features such as location, size, and number of rooms, or classifying emails as spam or not spam based on their content.
+
+Supervised learning is a type of machine learning where the algorithm is trained on a labeled dataset. This means that the input data (X) is already matched with the output data (Y). The algorithm learns to find patterns between X and Y, which it can then use to predict Y values for new X values that it has not seen before. The labeled dataset is used to train the algorithm, which means it learns to identify the relationships between X and Y.
+
+In supervised learning, the Y variable is the target variable, and the X variables are called features. The ML algorithm learns to predict the target variable based on the features. For example, in a credit card fraud detection scenario, the target variable is whether the transaction is fraudulent or not (binary), and the features are transaction characteristics like amount, location, and time. The algorithm learns to predict whether a transaction is fraudulent based on these features.
+
+Supervised learning can be divided into two categories: regression and classification. In regression problems, the target variable is continuous, and the goal is to predict a numerical value. In classification problems, the target variable is categorical, and the goal is to sort observations into different categories. For example, in credit rating, the target variable is ordinal (ranking from low to high creditworthiness), and the goal is to predict the credit rating category based on the features.
+
+Regression and classification use different ML techniques, and there are many different algorithms available. Logistic regression is an example of a classification algorithm, and ordinary least squares is an example of a regression algorithm. Non-linear models can also be used for problems involving large datasets with many features.
+
+The success of supervised learning algorithms is evaluated using test data, where the predicted values are compared to the actual values. If the algorithm can predict the values accurately for new data, it is considered to have learned from the labeled dataset.
+
+### Unsupervised Learning
+
+Unsupervised learning is a type of machine learning that involves finding patterns in a dataset without prior knowledge of the correct output or labeled data. Unlike supervised learning, there is no predetermined target variable or correct answer to work towards. Instead, unsupervised learning algorithms identify similarities and relationships between data points and group them together based on these similarities.
+
+One common unsupervised learning technique is clustering, where data points are partitioned into groups based on their similarities or distances from each other. Another technique is dimensionality reduction, which aims to reduce the number of variables or features in the dataset while retaining the most relevant information.
+
+In unsupervised learning, the emphasis is on finding hidden structures or patterns within the data that can be used for further analysis or decision-making. For example, unsupervised learning can be used to segment customers based on their purchasing behavior or to identify anomalies or outliers in financial transactions.
+
+### Deep Learning and Reinforcement Learning
+
+
+
+## Cross Validation
+
+
+
+## Machine Learning Algorithms
+
+
+
+## Dealing With Large Datasets
+
+
+
+## Clustering
+
