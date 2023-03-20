@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 12 An Introduction to Machine Learning Algorithms | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
-  <meta name="description" content="Chapter 12 An Introduction to Machine Learning Algorithms | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <title>Chapter 12 Machine Learning | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
+  <meta name="description" content="Chapter 12 Machine Learning | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 12 An Introduction to Machine Learning Algorithms | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta property="og:title" content="Chapter 12 Machine Learning | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 12 An Introduction to Machine Learning Algorithms | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta name="twitter:title" content="Chapter 12 Machine Learning | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   
   
   
@@ -23,7 +23,7 @@
 <meta name="author" content="Elias Muchineripi Mashayamombe" />
 
 
-<meta name="date" content="2023-03-19" />
+<meta name="date" content="2023-03-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -107,7 +107,19 @@
 <li class="chapter" data-level="9" data-path="time-series-analysis-arima-models.html"><a href="time-series-analysis-arima-models.html"><i class="fa fa-check"></i><b>9</b> Time Series Analysis – ARIMA Models</a></li>
 <li class="chapter" data-level="10" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>10</b> VAR and SVAR</a></li>
 <li class="chapter" data-level="11" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>11</b> Panel data Analysis</a></li>
-<li class="chapter" data-level="12" data-path="an-introduction-to-machine-learning-algorithms.html"><a href="an-introduction-to-machine-learning-algorithms.html"><i class="fa fa-check"></i><b>12</b> An Introduction to Machine Learning Algorithms</a></li>
+<li class="chapter" data-level="12" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>12</b> Machine Learning</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="machine-learning.html"><a href="machine-learning.html#introduction-to-machine-learning"><i class="fa fa-check"></i><b>12.1</b> Introduction to Machine Learning</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="machine-learning.html"><a href="machine-learning.html#supervised-learning"><i class="fa fa-check"></i><b>12.1.1</b> Supervised Learning</a></li>
+<li class="chapter" data-level="12.1.2" data-path="machine-learning.html"><a href="machine-learning.html#unsupervised-learning"><i class="fa fa-check"></i><b>12.1.2</b> Unsupervised Learning</a></li>
+<li class="chapter" data-level="12.1.3" data-path="machine-learning.html"><a href="machine-learning.html#deep-learning-and-reinforcement-learning"><i class="fa fa-check"></i><b>12.1.3</b> Deep Learning and Reinforcement Learning</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="machine-learning.html"><a href="machine-learning.html#cross-validation"><i class="fa fa-check"></i><b>12.2</b> Cross Validation</a></li>
+<li class="chapter" data-level="12.3" data-path="machine-learning.html"><a href="machine-learning.html#machine-learning-algorithms"><i class="fa fa-check"></i><b>12.3</b> Machine Learning Algorithms</a></li>
+<li class="chapter" data-level="12.4" data-path="machine-learning.html"><a href="machine-learning.html#dealing-with-large-datasets"><i class="fa fa-check"></i><b>12.4</b> Dealing With Large Datasets</a></li>
+<li class="chapter" data-level="12.5" data-path="machine-learning.html"><a href="machine-learning.html#clustering"><i class="fa fa-check"></i><b>12.5</b> Clustering</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -127,8 +139,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="an-introduction-to-machine-learning-algorithms" class="section level1 hasAnchor" number="12">
-<h1><span class="header-section-number">Chapter 12</span> An Introduction to Machine Learning Algorithms<a href="an-introduction-to-machine-learning-algorithms.html#an-introduction-to-machine-learning-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="machine-learning" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">Chapter 12</span> Machine Learning<a href="machine-learning.html#machine-learning" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>How do we communicate the patterns of desired behavior for baking bread? We can teach:</p>
 <ul>
 <li>by instruction: “to make bread, you need flour, yeast, salt, and water. Mix them together and knead the dough for 10 minutes.”</li>
@@ -136,7 +148,42 @@
 <li>by reinforcement: “bake bread every day for a month; learn from the texture, color, and taste of each loaf.”</li>
 </ul>
 <p>Machine learning is the art of programming computers to learn from such sources, and in this case, it would involve teaching a machine learning algorithm to recognize the patterns of successful bread baking based on examples.</p>
+<p>Statistical approaches and machine learning techniques are both ways of understanding a process by analyzing observations, but they have different assumptions and methods. Statistical approaches use strict rules and models to explain observations, while machine learning is more flexible and uses large amounts of data to find patterns and make predictions without human input. Machine learning is particularly useful for complex problems with many variables or non-linear systems. This chapter introduces machine learning methodologies but does not get into too much detail.</p>
+<div id="introduction-to-machine-learning" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Introduction to Machine Learning<a href="machine-learning.html#introduction-to-machine-learning" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are three types of machine learning: supervised learning, unsupervised learning, and deep learning/reinforcement learning.</p>
+<div id="supervised-learning" class="section level3 hasAnchor" number="12.1.1">
+<h3><span class="header-section-number">12.1.1</span> Supervised Learning<a href="machine-learning.html#supervised-learning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Supervised learning is a type of machine learning technique where the algorithm learns to predict an output value based on input data, while being trained on labeled examples. In supervised learning, the algorithm is provided with a labeled dataset, which means that each example in the dataset is paired with the correct output value. The algorithm then learns to map the input to the output by adjusting its parameters, with the goal of minimizing the difference between the predicted output and the correct output for each labeled example. Once the algorithm has learned from the labeled dataset, it can make predictions on new, unlabeled data by applying the learned mapping function. Examples of supervised learning include predicting housing prices based on features such as location, size, and number of rooms, or classifying emails as spam or not spam based on their content.</p>
+<p>Supervised learning is a type of machine learning where the algorithm is trained on a labeled dataset. This means that the input data (X) is already matched with the output data (Y). The algorithm learns to find patterns between X and Y, which it can then use to predict Y values for new X values that it has not seen before. The labeled dataset is used to train the algorithm, which means it learns to identify the relationships between X and Y.</p>
+<p>In supervised learning, the Y variable is the target variable, and the X variables are called features. The ML algorithm learns to predict the target variable based on the features. For example, in a credit card fraud detection scenario, the target variable is whether the transaction is fraudulent or not (binary), and the features are transaction characteristics like amount, location, and time. The algorithm learns to predict whether a transaction is fraudulent based on these features.</p>
+<p>Supervised learning can be divided into two categories: regression and classification. In regression problems, the target variable is continuous, and the goal is to predict a numerical value. In classification problems, the target variable is categorical, and the goal is to sort observations into different categories. For example, in credit rating, the target variable is ordinal (ranking from low to high creditworthiness), and the goal is to predict the credit rating category based on the features.</p>
+<p>Regression and classification use different ML techniques, and there are many different algorithms available. Logistic regression is an example of a classification algorithm, and ordinary least squares is an example of a regression algorithm. Non-linear models can also be used for problems involving large datasets with many features.</p>
+<p>The success of supervised learning algorithms is evaluated using test data, where the predicted values are compared to the actual values. If the algorithm can predict the values accurately for new data, it is considered to have learned from the labeled dataset.</p>
+</div>
+<div id="unsupervised-learning" class="section level3 hasAnchor" number="12.1.2">
+<h3><span class="header-section-number">12.1.2</span> Unsupervised Learning<a href="machine-learning.html#unsupervised-learning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Unsupervised learning is a type of machine learning that involves finding patterns in a dataset without prior knowledge of the correct output or labeled data. Unlike supervised learning, there is no predetermined target variable or correct answer to work towards. Instead, unsupervised learning algorithms identify similarities and relationships between data points and group them together based on these similarities.</p>
+<p>One common unsupervised learning technique is clustering, where data points are partitioned into groups based on their similarities or distances from each other. Another technique is dimensionality reduction, which aims to reduce the number of variables or features in the dataset while retaining the most relevant information.</p>
+<p>In unsupervised learning, the emphasis is on finding hidden structures or patterns within the data that can be used for further analysis or decision-making. For example, unsupervised learning can be used to segment customers based on their purchasing behavior or to identify anomalies or outliers in financial transactions.</p>
+</div>
+<div id="deep-learning-and-reinforcement-learning" class="section level3 hasAnchor" number="12.1.3">
+<h3><span class="header-section-number">12.1.3</span> Deep Learning and Reinforcement Learning<a href="machine-learning.html#deep-learning-and-reinforcement-learning" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+</div>
+<div id="cross-validation" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> Cross Validation<a href="machine-learning.html#cross-validation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="machine-learning-algorithms" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> Machine Learning Algorithms<a href="machine-learning.html#machine-learning-algorithms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="dealing-with-large-datasets" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Dealing With Large Datasets<a href="machine-learning.html#dealing-with-large-datasets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="clustering" class="section level2 hasAnchor" number="12.5">
+<h2><span class="header-section-number">12.5</span> Clustering<a href="machine-learning.html#clustering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
+</div>
 </div>
             </section>
 
