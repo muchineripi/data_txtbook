@@ -245,6 +245,10 @@ Leverage values, on the other hand, measure how much an observation's predictor 
 Once influential observations are identified, various methods can be used to deal with them. One approach is to remove the influential observations from the analysis, but this should be done carefully to avoid biasing the results. Alternatively, robust regression methods can be used that are less sensitive to influential observations, such as M-estimation or weighted least squares.
 
 
+## Regression Analysis With Qualitative Data
+
+### Dummy Varaibles In Multiple Regression
+
 
 
 
