@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
-  <meta name="description" content="Chapter 6 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <title>Chapter 5 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
+  <meta name="description" content="Chapter 5 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta property="og:title" content="Chapter 5 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta name="twitter:title" content="Chapter 5 Simple Linear Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   
   
   
@@ -23,7 +23,7 @@
 <meta name="author" content="Elias Muchineripi Mashayamombe" />
 
 
-<meta name="date" content="2023-03-19" />
+<meta name="date" content="2023-04-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -136,42 +136,118 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Data in R</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
-<li class="chapter" data-level="2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html"><i class="fa fa-check"></i><b>2</b> Getting started in R (Installations and tutorials)</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html"><i class="fa fa-check"></i><b>1</b> Getting started in R (Installations and tutorials)</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
-<li class="chapter" data-level="2.2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#what-is-r"><i class="fa fa-check"></i><b>2.2</b> What is R?</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r"><i class="fa fa-check"></i><b>2.3</b> Downloading and Installing R</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r"><i class="fa fa-check"></i><b>2.4</b> Getting Started in R</a></li>
-<li class="chapter" data-level="2.5" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#exercises-1"><i class="fa fa-check"></i><b>2.5</b> Exercises 1:</a></li>
+<li class="chapter" data-level="1.1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#what-is-r"><i class="fa fa-check"></i><b>1.2</b> What is R?</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r"><i class="fa fa-check"></i><b>1.3</b> Downloading and Installing R</a></li>
+<li class="chapter" data-level="1.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r"><i class="fa fa-check"></i><b>1.4</b> Getting Started in R</a></li>
+<li class="chapter" data-level="1.5" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#exercises-1"><i class="fa fa-check"></i><b>1.5</b> Exercises 1:</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>3</b> R Basics and Simulations</a>
+<li class="chapter" data-level="2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>2</b> R Basics and Simulations</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#packages-in-r"><i class="fa fa-check"></i><b>3.1</b> Packages in R</a></li>
-<li class="chapter" data-level="3.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#loops"><i class="fa fa-check"></i><b>3.2</b> LOOPS</a>
+<li class="chapter" data-level="2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#packages-in-r"><i class="fa fa-check"></i><b>2.1</b> Packages in R</a></li>
+<li class="chapter" data-level="2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#loops"><i class="fa fa-check"></i><b>2.2</b> LOOPS</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>3.2.1</b> For Loops</a></li>
-<li class="chapter" data-level="3.2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>3.2.2</b> While Loops</a></li>
+<li class="chapter" data-level="2.2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>2.2.1</b> For Loops</a></li>
+<li class="chapter" data-level="2.2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>2.2.2</b> While Loops</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>3.3</b> Simulations</a></li>
+<li class="chapter" data-level="2.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>2.3</b> Simulations</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>4</b> Data types, sources, and wrangling</a></li>
-<li class="chapter" data-level="5" data-path="descriptive-studies.html"><a href="descriptive-studies.html"><i class="fa fa-check"></i><b>5</b> Descriptive studies</a></li>
-<li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a>
+<li class="chapter" data-level="3" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>3</b> Data types, sources, and wrangling</a></li>
+<li class="chapter" data-level="4" data-path="descriptive-studies.html"><a href="descriptive-studies.html"><i class="fa fa-check"></i><b>4</b> Descriptive studies</a></li>
+<li class="chapter" data-level="5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Simple Linear Regression</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-history"><i class="fa fa-check"></i><b>6.1</b> Regression History</a>
+<li class="chapter" data-level="5.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-history"><i class="fa fa-check"></i><b>5.1</b> Regression History</a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#galton-heights-data"><i class="fa fa-check"></i><b>6.1.1</b> Galton Heights Data</a></li>
+<li class="chapter" data-level="5.1.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#galton-heights-data"><i class="fa fa-check"></i><b>5.1.1</b> Galton Heights Data</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#getting-started-the-simple-regression-model"><i class="fa fa-check"></i><b>6.2</b> Getting Started The Simple Regression Model</a></li>
-<li class="chapter" data-level="6.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#ordinary-least-squares-estimations"><i class="fa fa-check"></i><b>6.3</b> Ordinary Least Squares Estimations</a></li>
+<li class="chapter" data-level="5.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#getting-started-the-simple-regression-model"><i class="fa fa-check"></i><b>5.2</b> Getting Started The Simple Regression Model</a></li>
+<li class="chapter" data-level="5.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#ordinary-least-squares-estimations"><i class="fa fa-check"></i><b>5.3</b> Ordinary Least Squares Estimations</a></li>
+<li class="chapter" data-level="5.4" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#simple-linear-regression-assumptions"><i class="fa fa-check"></i><b>5.4</b> Simple Linear Regression Assumptions</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#linearity"><i class="fa fa-check"></i><b>5.4.1</b> Linearity:</a></li>
+<li class="chapter" data-level="5.4.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#zero-conditional-mean"><i class="fa fa-check"></i><b>5.4.2</b> Zero conditional mean</a></li>
+<li class="chapter" data-level="5.4.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#independence"><i class="fa fa-check"></i><b>5.4.3</b> Independence:</a></li>
+<li class="chapter" data-level="5.4.4" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#homoscedasticity"><i class="fa fa-check"></i><b>5.4.4</b> Homoscedasticity:</a></li>
+<li class="chapter" data-level="5.4.5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#sample-variation"><i class="fa fa-check"></i><b>5.4.5</b> Sample Variation</a></li>
+<li class="chapter" data-level="5.4.6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#normality"><i class="fa fa-check"></i><b>5.4.6</b> Normality</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>7</b> Multiple Regression</a></li>
-<li class="chapter" data-level="8" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>8</b> Logit and probit Models</a></li>
-<li class="chapter" data-level="9" data-path="time-series-analysis-arima-models.html"><a href="time-series-analysis-arima-models.html"><i class="fa fa-check"></i><b>9</b> Time Series Analysis – ARIMA Models</a></li>
-<li class="chapter" data-level="10" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>10</b> VAR and SVAR</a></li>
-<li class="chapter" data-level="11" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>11</b> Panel data Analysis</a></li>
-<li class="chapter" data-level="12" data-path="an-introduction-to-machine-learning-algorithms.html"><a href="an-introduction-to-machine-learning-algorithms.html"><i class="fa fa-check"></i><b>12</b> An Introduction to Machine Learning Algorithms</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>6</b> Multiple Regression</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="multiple-regression.html"><a href="multiple-regression.html#multiple-regression-assumptions"><i class="fa fa-check"></i><b>6.1</b> Multiple Regression Assumptions</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="multiple-regression.html"><a href="multiple-regression.html#linearity-1"><i class="fa fa-check"></i><b>6.1.1</b> Linearity:</a></li>
+<li class="chapter" data-level="6.1.2" data-path="multiple-regression.html"><a href="multiple-regression.html#zero-conditional-mean-1"><i class="fa fa-check"></i><b>6.1.2</b> Zero conditional mean</a></li>
+<li class="chapter" data-level="6.1.3" data-path="multiple-regression.html"><a href="multiple-regression.html#independence-1"><i class="fa fa-check"></i><b>6.1.3</b> Independence:</a></li>
+<li class="chapter" data-level="6.1.4" data-path="multiple-regression.html"><a href="multiple-regression.html#homoscedasticity-1"><i class="fa fa-check"></i><b>6.1.4</b> Homoscedasticity:</a></li>
+<li class="chapter" data-level="6.1.5" data-path="multiple-regression.html"><a href="multiple-regression.html#sample-variation-1"><i class="fa fa-check"></i><b>6.1.5</b> Sample Variation</a></li>
+<li class="chapter" data-level="6.1.6" data-path="multiple-regression.html"><a href="multiple-regression.html#normality-1"><i class="fa fa-check"></i><b>6.1.6</b> Normality</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="multiple-regression.html"><a href="multiple-regression.html#multiple-regression-equation"><i class="fa fa-check"></i><b>6.2</b> Multiple Regression Equation</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="multiple-regression.html"><a href="multiple-regression.html#anova-table"><i class="fa fa-check"></i><b>6.2.1</b> ANOVA Table</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="multiple-regression.html"><a href="multiple-regression.html#hypothesis-testing"><i class="fa fa-check"></i><b>6.3</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.4" data-path="multiple-regression.html"><a href="multiple-regression.html#model-fitness-and-predictive-power"><i class="fa fa-check"></i><b>6.4</b> Model Fitness and Predictive Power</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="multiple-regression.html"><a href="multiple-regression.html#adjusted-r-squared"><i class="fa fa-check"></i><b>6.4.1</b> Adjusted R-Squared</a></li>
+<li class="chapter" data-level="6.4.2" data-path="multiple-regression.html"><a href="multiple-regression.html#akaikes-information-criterion-aic"><i class="fa fa-check"></i><b>6.4.2</b> Akaike’s Information Criterion (AIC)</a></li>
+<li class="chapter" data-level="6.4.3" data-path="multiple-regression.html"><a href="multiple-regression.html#bayesian-information-criterion-bic"><i class="fa fa-check"></i><b>6.4.3</b> Bayesian Information Criterion (BIC)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="multiple-regression.html"><a href="multiple-regression.html#model-misspecification"><i class="fa fa-check"></i><b>6.5</b> Model Misspecification</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="multiple-regression.html"><a href="multiple-regression.html#heteroscedasticity"><i class="fa fa-check"></i><b>6.5.1</b> Heteroscedasticity</a></li>
+<li class="chapter" data-level="6.5.2" data-path="multiple-regression.html"><a href="multiple-regression.html#serial-correlation"><i class="fa fa-check"></i><b>6.5.2</b> Serial Correlation</a></li>
+<li class="chapter" data-level="6.5.3" data-path="multiple-regression.html"><a href="multiple-regression.html#multicollinearity"><i class="fa fa-check"></i><b>6.5.3</b> Multicollinearity</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="multiple-regression.html"><a href="multiple-regression.html#influence-analysis"><i class="fa fa-check"></i><b>6.6</b> Influence Analysis</a></li>
+<li class="chapter" data-level="6.7" data-path="multiple-regression.html"><a href="multiple-regression.html#regression-analysis-with-qualitative-data"><i class="fa fa-check"></i><b>6.7</b> Regression Analysis With Qualitative Data</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="multiple-regression.html"><a href="multiple-regression.html#dummy-varaibles-in-multiple-regression"><i class="fa fa-check"></i><b>6.7.1</b> Dummy Varaibles In Multiple Regression</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>7</b> Logit and probit Models</a></li>
+<li class="chapter" data-level="8" data-path="time-series-analysis.html"><a href="time-series-analysis.html"><i class="fa fa-check"></i><b>8</b> Time Series Analysis</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#trend-models"><i class="fa fa-check"></i><b>8.1</b> Trend Models</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#linear-trend-models"><i class="fa fa-check"></i><b>8.1.1</b> Linear Trend Models</a></li>
+<li class="chapter" data-level="8.1.2" data-path="time-series-analysis.html"><a href="time-series-analysis.html#log-linear-trend-models"><i class="fa fa-check"></i><b>8.1.2</b> Log-Linear Trend Models</a></li>
+<li class="chapter" data-level="8.1.3" data-path="time-series-analysis.html"><a href="time-series-analysis.html#major-limitation-of-trend-models"><i class="fa fa-check"></i><b>8.1.3</b> Major Limitation of Trend Models</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="time-series-analysis.html"><a href="time-series-analysis.html#arima-models"><i class="fa fa-check"></i><b>8.2</b> ARIMA Models</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#autoregressive-ar-processes"><i class="fa fa-check"></i><b>8.2.1</b> Autoregressive (AR) Processes</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="time-series-analysis.html"><a href="time-series-analysis.html#random-walk"><i class="fa fa-check"></i><b>8.3</b> Random Walk</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#unit-root-test"><i class="fa fa-check"></i><b>8.3.1</b> Unit Root Test</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="time-series-analysis.html"><a href="time-series-analysis.html#seasonality"><i class="fa fa-check"></i><b>8.4</b> Seasonality</a></li>
+<li class="chapter" data-level="8.5" data-path="time-series-analysis.html"><a href="time-series-analysis.html#cointegration"><i class="fa fa-check"></i><b>8.5</b> Cointegration</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>9</b> VAR and SVAR</a></li>
+<li class="chapter" data-level="10" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>10</b> Panel data Analysis</a></li>
+<li class="chapter" data-level="11" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>11</b> Machine Learning</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="machine-learning.html"><a href="machine-learning.html#introduction-to-machine-learning"><i class="fa fa-check"></i><b>11.1</b> Introduction to Machine Learning</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="machine-learning.html"><a href="machine-learning.html#some-packages"><i class="fa fa-check"></i><b>11.1.1</b> Some Packages</a></li>
+<li class="chapter" data-level="11.1.2" data-path="machine-learning.html"><a href="machine-learning.html#supervised-learning"><i class="fa fa-check"></i><b>11.1.2</b> Supervised Learning</a></li>
+<li class="chapter" data-level="11.1.3" data-path="machine-learning.html"><a href="machine-learning.html#unsupervised-learning"><i class="fa fa-check"></i><b>11.1.3</b> Unsupervised Learning</a></li>
+<li class="chapter" data-level="11.1.4" data-path="machine-learning.html"><a href="machine-learning.html#deep-learning-and-reinforcement-learning"><i class="fa fa-check"></i><b>11.1.4</b> Deep Learning and Reinforcement Learning</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="machine-learning.html"><a href="machine-learning.html#cross-validation"><i class="fa fa-check"></i><b>11.2</b> Cross Validation</a></li>
+<li class="chapter" data-level="11.3" data-path="machine-learning.html"><a href="machine-learning.html#machine-learning-algorithms"><i class="fa fa-check"></i><b>11.3</b> Machine Learning Algorithms</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="machine-learning.html"><a href="machine-learning.html#supervised-machine-learning-algorithms"><i class="fa fa-check"></i><b>11.3.1</b> Supervised Machine Learning Algorithms</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="machine-learning.html"><a href="machine-learning.html#dealing-with-large-datasets"><i class="fa fa-check"></i><b>11.4</b> Dealing With Large Datasets</a></li>
+<li class="chapter" data-level="11.5" data-path="machine-learning.html"><a href="machine-learning.html#clustering"><i class="fa fa-check"></i><b>11.5</b> Clustering</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -191,15 +267,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="simple-linear-regression" class="section level1 hasAnchor" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Simple Linear Regression<a href="simple-linear-regression.html#simple-linear-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="simple-linear-regression" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Simple Linear Regression<a href="simple-linear-regression.html#simple-linear-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Understanding how variables are related is critical in data analysis. One of the most basic models used to understand relationships between different variables is called the simple regression model. The simple regression model is used to examine the relationship between two variables.</p>
-<div id="regression-history" class="section level2 hasAnchor" number="6.1">
-<h2><span class="header-section-number">6.1</span> Regression History<a href="simple-linear-regression.html#regression-history" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="regression-history" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Regression History<a href="simple-linear-regression.html#regression-history" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The term “regression” in data analysis was first introduced by Sir Francis Galton in the late 19th century. Galton was a British polymath who made important contributions to a wide range of fields, including statistics, psychology, and biology. Galton was interested in the relationship between the heights of fathers and their sons, and he observed that while the heights of sons tended to be closer to the average height of the population as a whole, they also tended to be closer to the average height of their fathers than to the population average. Galton called this phenomenon “regression to the mean”.</p>
 <p>The term “regression” referred to the idea that, over time, extreme values tend to move back towards the average or mean value. This idea was later applied to statistical models in a variety of fields, including economics, and the term “regression” became a standard part of the statistical and econometric lexicon. Today, regression analysis is a widely used statistical technique in economics, finance, biology etc. and this technique is used to estimate the relationship between a dependent variable and one or more independent variables. The goal is to identify the extent to which changes in the independent variables are associated with changes in the dependent variable.</p>
-<div id="galton-heights-data" class="section level3 hasAnchor" number="6.1.1">
-<h3><span class="header-section-number">6.1.1</span> Galton Heights Data<a href="simple-linear-regression.html#galton-heights-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="galton-heights-data" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Galton Heights Data<a href="simple-linear-regression.html#galton-heights-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The HistData package gives us access to Galton’s family height data. Lets load this into RStudio and expore a few things about the data. The code data(“GaltonFamilies”) loads the “GaltonFamilies” dataset into R from the package. This dataset contains information on the heights of parents and their children, as collected by Sir Francis Galton in the late 19th century. The “HistData” package, which contains a collection of historical datasets that are useful for teaching and research in statistics and data science. You can explore the data set for your learning purposes. If the package is not already installed in your R environment, you may need to install it using the install.packages(“HistData”) command before you can load the dataset. Once the dataset is loaded, you can use R functions to explore and analyze its contents. For example, you might use the summary() function to get an overview of the dataset’s variables and their distributions, or the plot() function to create visualizations of the data.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="simple-linear-regression.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load the HistData package.</span></span>
 <span id="cb1-2"><a href="simple-linear-regression.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -222,7 +298,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## # A tibble: 1 × 4
 ##   `mean(father)` `sd(father)` `mean(son)` `sd(son)`
 ##            &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt;
-## 1           69.1         2.55        69.2      2.51</code></pre>
+## 1           69.1         2.55        69.1      2.65</code></pre>
 <p>Though this code looks intimidating, there is not much to it really. We will expalin it line by line. When anything is not clear, feel free to use the code documentation, stack overflow or any AI tool like chatGPT, which is my favourite.</p>
 <p>This code creates a new data frame called galton_heights, which contains information on the heights of fathers and their first-born sons:</p>
 <ul>
@@ -242,8 +318,8 @@ rename(son = childHeight): This renames the childHeight variable to son.</li>
 <p>The code ‘geom_point(alpha = 0.5)’ adds a layer to the cose using a ‘+’ and it specifies that the plot should be made using points, with a transparency level (alpha) of 0.5. The geom_point function is used to create the scatter plot.</p>
 </div>
 </div>
-<div id="getting-started-the-simple-regression-model" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> Getting Started The Simple Regression Model<a href="simple-linear-regression.html#getting-started-the-simple-regression-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="getting-started-the-simple-regression-model" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Getting Started The Simple Regression Model<a href="simple-linear-regression.html#getting-started-the-simple-regression-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Think about this: if you study this course for two hours every week, do you think you will pass it and with what mark? Now imagine you study this course for ten hours a week putting 2 hours everyday, Monday to Friday, one hour understanding the theory and another hour coding, how is your final mark likely to change? I am going to assume you would expect a higher mark if you put in the hours? This is perfect example of how two variable, marks and hours of study are related. Your final mark clearly depends on the hours you spend studying hence the final mark is called the dependent variable whilst the hours spent studying are called the independent variable. For simplicity and as is standard in literature, we are going to call the dependent variable <span class="math inline">\(Y\)</span> and the independent variable <span class="math inline">\(X\)</span>. The dependent variable is also called regressand or the explained, response or predicted variable whilst the independent variable is also called the regressor or the explanatory, control or predictor variable. Just know these words can be used interchangeably but for the avoidance of confusion, we will stick to dependent and independent variables.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="simple-linear-regression.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tidyverse package. ggplot2 is part of this package</span></span>
 <span id="cb4-2"><a href="simple-linear-regression.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -270,76 +346,67 @@ y = \beta_0 + \beta_1x + \upsilon \tag{1}
 \end{equation}\]</span></p>
 <p>For a given population, equation (1) defines the simple linear regression model which is also called the two-variable linear regression model or bivariate linear regression model because it relates the two variables x and y. We will discuss more simple linear relationships in this section but for now, we have to understand how we get this relationship. We will use the ordinary least sqaured regression method.</p>
 </div>
-<div id="ordinary-least-squares-estimations" class="section level2 hasAnchor" number="6.3">
-<h2><span class="header-section-number">6.3</span> Ordinary Least Squares Estimations<a href="simple-linear-regression.html#ordinary-least-squares-estimations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ordinary-least-squares-estimations" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Ordinary Least Squares Estimations<a href="simple-linear-regression.html#ordinary-least-squares-estimations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will use the hours of study and marks dataset to understand ordinary least squares regression, simply known as OLS. The idea behind OLS is to find a linear relationship that minimizes the sum of the squared residuals or errors. The values we have from our sample are the actual values and the values obtained by estimating a straight line are called the predicted values. The residual or the error is the difference between the actual values and the estimated values. Consider the values give in the table below that we have have already used to get our scatter plot.</p>
 <table>
+<caption>Student Marks and Hours Studied Per Week <b></caption>
+<colgroup>
+<col width="23%" />
+<col width="4%" />
+<col width="4%" />
+<col width="4%" />
+<col width="4%" />
+<col width="4%" />
+<col width="4%" />
+<col width="4%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th align="right">Hours/week</th>
-<th align="right">Marks</th>
+<th>Hours/Week (X)</th>
+<th>2</th>
+<th>4</th>
+<th>5</th>
+<th>5</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">2</td>
-<td align="right">5</td>
-</tr>
-<tr class="even">
-<td align="right">4</td>
-<td align="right">15</td>
-</tr>
-<tr class="odd">
-<td align="right">5</td>
-<td align="right">15</td>
-</tr>
-<tr class="even">
-<td align="right">5</td>
-<td align="right">18</td>
-</tr>
-<tr class="odd">
-<td align="right">7</td>
-<td align="right">25</td>
-</tr>
-<tr class="even">
-<td align="right">8</td>
-<td align="right">28</td>
-</tr>
-<tr class="odd">
-<td align="right">9</td>
-<td align="right">39</td>
-</tr>
-<tr class="even">
-<td align="right">10</td>
-<td align="right">45</td>
-</tr>
-<tr class="odd">
-<td align="right">10</td>
-<td align="right">44</td>
-</tr>
-<tr class="even">
-<td align="right">11</td>
-<td align="right">55</td>
-</tr>
-<tr class="odd">
-<td align="right">12</td>
-<td align="right">63</td>
-</tr>
-<tr class="even">
-<td align="right">12</td>
-<td align="right">65</td>
-</tr>
-<tr class="odd">
-<td align="right">13</td>
-<td align="right">72</td>
-</tr>
-<tr class="even">
-<td align="right">14</td>
-<td align="right">79</td>
-</tr>
-<tr class="odd">
-<td align="right">15</td>
-<td align="right">82</td>
+<td>Marks (Y)</td>
+<td>5</td>
+<td>15</td>
+<td>15</td>
+<td>18</td>
+<td>25</td>
+<td>28</td>
+<td>39</td>
+<td>45</td>
+<td>44</td>
+<td>55</td>
+<td>63</td>
+<td>65</td>
+<td>72</td>
+<td>79</td>
+<td>82</td>
 </tr>
 </tbody>
 </table>
@@ -354,7 +421,33 @@ E(\upsilon_i) = 0 \tag{3}
 <p>The graph below shows the predicted straight, red, and the difference points obtained from our scatter plot.</p>
 <p><img src="bookdownproj_files/figure-html/residuals1-1.png" width="672" /></p>
 <p>The difference between the actual observed points and the estimated line is what we are calling the residual.</p>
+</div>
+<div id="simple-linear-regression-assumptions" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Simple Linear Regression Assumptions<a href="simple-linear-regression.html#simple-linear-regression-assumptions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="linearity" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Linearity:<a href="simple-linear-regression.html#linearity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The relationship between the dependent variable and the independent variable is linear. This means that the change in the dependent variable is proportional to the change in the independent variable. This assumption can be checked by creating a scatter plot of the data and visually assessing whether the data points appear to follow a straight line.</p>
+</div>
+<div id="zero-conditional-mean" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Zero conditional mean<a href="simple-linear-regression.html#zero-conditional-mean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Independent variable is uncorrelated with error term.</p>
+</div>
+<div id="independence" class="section level3 hasAnchor" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> Independence:<a href="simple-linear-regression.html#independence" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The residuals are independent. In particular, there is no correlation between consecutive residuals in time series data.</p>
+</div>
+<div id="homoscedasticity" class="section level3 hasAnchor" number="5.4.4">
+<h3><span class="header-section-number">5.4.4</span> Homoscedasticity:<a href="simple-linear-regression.html#homoscedasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The variance of the residuals is constant across all levels of the independent variable. This means that the spread of the residuals is consistent across the range of the independent variable. This assumption can be checked by creating a residual plot and visually assessing whether the spread of the residuals appears to be constant.</p>
+</div>
+<div id="sample-variation" class="section level3 hasAnchor" number="5.4.5">
+<h3><span class="header-section-number">5.4.5</span> Sample Variation<a href="simple-linear-regression.html#sample-variation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="normality" class="section level3 hasAnchor" number="5.4.6">
+<h3><span class="header-section-number">5.4.6</span> Normality<a href="simple-linear-regression.html#normality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The residuals are normally distributed. This means that the distribution of the residuals should be symmetric and bell-shaped. This assumption can be checked by creating a histogram or a normal probability plot of the residuals and visually assessing whether the distribution appears to be normal</p>
 
+</div>
 </div>
 </div>
             </section>

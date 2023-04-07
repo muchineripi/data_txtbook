@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
-  <meta name="description" content="Chapter 7 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <title>Chapter 6 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R</title>
+  <meta name="description" content="Chapter 6 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta property="og:title" content="Chapter 6 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
+  <meta name="twitter:title" content="Chapter 6 Multiple Regression | A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R" />
   
   
   
@@ -23,7 +23,7 @@
 <meta name="author" content="Elias Muchineripi Mashayamombe" />
 
 
-<meta name="date" content="2023-04-06" />
+<meta name="date" content="2023-04-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -72,86 +72,117 @@
 <li><a href="./">Data in R</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
-<li class="chapter" data-level="2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html"><i class="fa fa-check"></i><b>2</b> Getting started in R (Installations and tutorials)</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html"><i class="fa fa-check"></i><b>1</b> Getting started in R (Installations and tutorials)</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
-<li class="chapter" data-level="2.2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#what-is-r"><i class="fa fa-check"></i><b>2.2</b> What is R?</a></li>
-<li class="chapter" data-level="2.3" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r"><i class="fa fa-check"></i><b>2.3</b> Downloading and Installing R</a></li>
-<li class="chapter" data-level="2.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r"><i class="fa fa-check"></i><b>2.4</b> Getting Started in R</a></li>
-<li class="chapter" data-level="2.5" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#exercises-1"><i class="fa fa-check"></i><b>2.5</b> Exercises 1:</a></li>
+<li class="chapter" data-level="1.1" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#introduction"><i class="fa fa-check"></i><b>1.1</b> Introduction</a></li>
+<li class="chapter" data-level="1.2" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#what-is-r"><i class="fa fa-check"></i><b>1.2</b> What is R?</a></li>
+<li class="chapter" data-level="1.3" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#downloading-and-installing-r"><i class="fa fa-check"></i><b>1.3</b> Downloading and Installing R</a></li>
+<li class="chapter" data-level="1.4" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#getting-started-in-r"><i class="fa fa-check"></i><b>1.4</b> Getting Started in R</a></li>
+<li class="chapter" data-level="1.5" data-path="getting-started-in-r-installations-and-tutorials.html"><a href="getting-started-in-r-installations-and-tutorials.html#exercises-1"><i class="fa fa-check"></i><b>1.5</b> Exercises 1:</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>3</b> R Basics and Simulations</a>
+<li class="chapter" data-level="2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html"><i class="fa fa-check"></i><b>2</b> R Basics and Simulations</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#packages-in-r"><i class="fa fa-check"></i><b>3.1</b> Packages in R</a></li>
-<li class="chapter" data-level="3.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#loops"><i class="fa fa-check"></i><b>3.2</b> LOOPS</a>
+<li class="chapter" data-level="2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#packages-in-r"><i class="fa fa-check"></i><b>2.1</b> Packages in R</a></li>
+<li class="chapter" data-level="2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#loops"><i class="fa fa-check"></i><b>2.2</b> LOOPS</a>
 <ul>
-<li class="chapter" data-level="3.2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>3.2.1</b> For Loops</a></li>
-<li class="chapter" data-level="3.2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>3.2.2</b> While Loops</a></li>
+<li class="chapter" data-level="2.2.1" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#for-loops"><i class="fa fa-check"></i><b>2.2.1</b> For Loops</a></li>
+<li class="chapter" data-level="2.2.2" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#while-loops"><i class="fa fa-check"></i><b>2.2.2</b> While Loops</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>3.3</b> Simulations</a></li>
+<li class="chapter" data-level="2.3" data-path="r-basics-and-simulations.html"><a href="r-basics-and-simulations.html#simulations"><i class="fa fa-check"></i><b>2.3</b> Simulations</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>4</b> Data types, sources, and wrangling</a></li>
-<li class="chapter" data-level="5" data-path="descriptive-studies.html"><a href="descriptive-studies.html"><i class="fa fa-check"></i><b>5</b> Descriptive studies</a></li>
-<li class="chapter" data-level="6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>6</b> Simple Linear Regression</a>
+<li class="chapter" data-level="3" data-path="data-types-sources-and-wrangling.html"><a href="data-types-sources-and-wrangling.html"><i class="fa fa-check"></i><b>3</b> Data types, sources, and wrangling</a></li>
+<li class="chapter" data-level="4" data-path="descriptive-studies.html"><a href="descriptive-studies.html"><i class="fa fa-check"></i><b>4</b> Descriptive studies</a></li>
+<li class="chapter" data-level="5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html"><i class="fa fa-check"></i><b>5</b> Simple Linear Regression</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-history"><i class="fa fa-check"></i><b>6.1</b> Regression History</a>
+<li class="chapter" data-level="5.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#regression-history"><i class="fa fa-check"></i><b>5.1</b> Regression History</a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#galton-heights-data"><i class="fa fa-check"></i><b>6.1.1</b> Galton Heights Data</a></li>
+<li class="chapter" data-level="5.1.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#galton-heights-data"><i class="fa fa-check"></i><b>5.1.1</b> Galton Heights Data</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#getting-started-the-simple-regression-model"><i class="fa fa-check"></i><b>6.2</b> Getting Started The Simple Regression Model</a></li>
-<li class="chapter" data-level="6.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#ordinary-least-squares-estimations"><i class="fa fa-check"></i><b>6.3</b> Ordinary Least Squares Estimations</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>7</b> Multiple Regression</a>
+<li class="chapter" data-level="5.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#getting-started-the-simple-regression-model"><i class="fa fa-check"></i><b>5.2</b> Getting Started The Simple Regression Model</a></li>
+<li class="chapter" data-level="5.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#ordinary-least-squares-estimations"><i class="fa fa-check"></i><b>5.3</b> Ordinary Least Squares Estimations</a></li>
+<li class="chapter" data-level="5.4" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#simple-linear-regression-assumptions"><i class="fa fa-check"></i><b>5.4</b> Simple Linear Regression Assumptions</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="multiple-regression.html"><a href="multiple-regression.html#multiple-regression-assumptions"><i class="fa fa-check"></i><b>7.1</b> Multiple Regression Assumptions</a>
-<ul>
-<li class="chapter" data-level="7.1.1" data-path="multiple-regression.html"><a href="multiple-regression.html#linearity"><i class="fa fa-check"></i><b>7.1.1</b> Linearity:</a></li>
-<li class="chapter" data-level="7.1.2" data-path="multiple-regression.html"><a href="multiple-regression.html#zero-conditional-mean"><i class="fa fa-check"></i><b>7.1.2</b> Zero conditional mean</a></li>
-<li class="chapter" data-level="7.1.3" data-path="multiple-regression.html"><a href="multiple-regression.html#independence"><i class="fa fa-check"></i><b>7.1.3</b> Independence:</a></li>
-<li class="chapter" data-level="7.1.4" data-path="multiple-regression.html"><a href="multiple-regression.html#homoscedasticity"><i class="fa fa-check"></i><b>7.1.4</b> Homoscedasticity:</a></li>
-<li class="chapter" data-level="7.1.5" data-path="multiple-regression.html"><a href="multiple-regression.html#sample-variation"><i class="fa fa-check"></i><b>7.1.5</b> Sample Variation</a></li>
-<li class="chapter" data-level="7.1.6" data-path="multiple-regression.html"><a href="multiple-regression.html#normality"><i class="fa fa-check"></i><b>7.1.6</b> Normality</a></li>
-</ul></li>
-<li class="chapter" data-level="7.2" data-path="multiple-regression.html"><a href="multiple-regression.html#multiple-regression-equation"><i class="fa fa-check"></i><b>7.2</b> Multiple Regression Equation</a>
-<ul>
-<li class="chapter" data-level="7.2.1" data-path="multiple-regression.html"><a href="multiple-regression.html#anova-table"><i class="fa fa-check"></i><b>7.2.1</b> ANOVA Table</a></li>
-</ul></li>
-<li class="chapter" data-level="7.3" data-path="multiple-regression.html"><a href="multiple-regression.html#hypothesis-testing"><i class="fa fa-check"></i><b>7.3</b> Hypothesis Testing</a></li>
-<li class="chapter" data-level="7.4" data-path="multiple-regression.html"><a href="multiple-regression.html#model-fitness-and-predictive-power"><i class="fa fa-check"></i><b>7.4</b> Model Fitness and Predictive Power</a>
-<ul>
-<li class="chapter" data-level="7.4.1" data-path="multiple-regression.html"><a href="multiple-regression.html#adjusted-r-squared"><i class="fa fa-check"></i><b>7.4.1</b> Adjusted R-Squared</a></li>
-<li class="chapter" data-level="7.4.2" data-path="multiple-regression.html"><a href="multiple-regression.html#akaikes-information-criterion-aic"><i class="fa fa-check"></i><b>7.4.2</b> Akaike’s Information Criterion (AIC)</a></li>
-<li class="chapter" data-level="7.4.3" data-path="multiple-regression.html"><a href="multiple-regression.html#bayesian-information-criterion-bic"><i class="fa fa-check"></i><b>7.4.3</b> Bayesian Information Criterion (BIC)</a></li>
-</ul></li>
-<li class="chapter" data-level="7.5" data-path="multiple-regression.html"><a href="multiple-regression.html#model-misspecification"><i class="fa fa-check"></i><b>7.5</b> Model Misspecification</a>
-<ul>
-<li class="chapter" data-level="7.5.1" data-path="multiple-regression.html"><a href="multiple-regression.html#heteroscedasticity"><i class="fa fa-check"></i><b>7.5.1</b> Heteroscedasticity</a></li>
-<li class="chapter" data-level="7.5.2" data-path="multiple-regression.html"><a href="multiple-regression.html#serial-correlation"><i class="fa fa-check"></i><b>7.5.2</b> Serial Correlation</a></li>
-<li class="chapter" data-level="7.5.3" data-path="multiple-regression.html"><a href="multiple-regression.html#multicollinearity"><i class="fa fa-check"></i><b>7.5.3</b> Multicollinearity</a></li>
-</ul></li>
-<li class="chapter" data-level="7.6" data-path="multiple-regression.html"><a href="multiple-regression.html#influence-analysis"><i class="fa fa-check"></i><b>7.6</b> Influence Analysis</a></li>
-<li class="chapter" data-level="7.7" data-path="multiple-regression.html"><a href="multiple-regression.html#regression-analysis-with-qualitative-data"><i class="fa fa-check"></i><b>7.7</b> Regression Analysis With Qualitative Data</a>
-<ul>
-<li class="chapter" data-level="7.7.1" data-path="multiple-regression.html"><a href="multiple-regression.html#dummy-varaibles-in-multiple-regression"><i class="fa fa-check"></i><b>7.7.1</b> Dummy Varaibles In Multiple Regression</a></li>
+<li class="chapter" data-level="5.4.1" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#linearity"><i class="fa fa-check"></i><b>5.4.1</b> Linearity:</a></li>
+<li class="chapter" data-level="5.4.2" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#zero-conditional-mean"><i class="fa fa-check"></i><b>5.4.2</b> Zero conditional mean</a></li>
+<li class="chapter" data-level="5.4.3" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#independence"><i class="fa fa-check"></i><b>5.4.3</b> Independence:</a></li>
+<li class="chapter" data-level="5.4.4" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#homoscedasticity"><i class="fa fa-check"></i><b>5.4.4</b> Homoscedasticity:</a></li>
+<li class="chapter" data-level="5.4.5" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#sample-variation"><i class="fa fa-check"></i><b>5.4.5</b> Sample Variation</a></li>
+<li class="chapter" data-level="5.4.6" data-path="simple-linear-regression.html"><a href="simple-linear-regression.html#normality"><i class="fa fa-check"></i><b>5.4.6</b> Normality</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>8</b> Logit and probit Models</a></li>
-<li class="chapter" data-level="9" data-path="time-series-analysis-arima-models.html"><a href="time-series-analysis-arima-models.html"><i class="fa fa-check"></i><b>9</b> Time Series Analysis – ARIMA Models</a></li>
-<li class="chapter" data-level="10" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>10</b> VAR and SVAR</a></li>
-<li class="chapter" data-level="11" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>11</b> Panel data Analysis</a></li>
-<li class="chapter" data-level="12" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>12</b> Machine Learning</a>
+<li class="chapter" data-level="6" data-path="multiple-regression.html"><a href="multiple-regression.html"><i class="fa fa-check"></i><b>6</b> Multiple Regression</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="machine-learning.html"><a href="machine-learning.html#introduction-to-machine-learning"><i class="fa fa-check"></i><b>12.1</b> Introduction to Machine Learning</a>
+<li class="chapter" data-level="6.1" data-path="multiple-regression.html"><a href="multiple-regression.html#multiple-regression-assumptions"><i class="fa fa-check"></i><b>6.1</b> Multiple Regression Assumptions</a>
 <ul>
-<li class="chapter" data-level="12.1.1" data-path="machine-learning.html"><a href="machine-learning.html#supervised-learning"><i class="fa fa-check"></i><b>12.1.1</b> Supervised Learning</a></li>
-<li class="chapter" data-level="12.1.2" data-path="machine-learning.html"><a href="machine-learning.html#unsupervised-learning"><i class="fa fa-check"></i><b>12.1.2</b> Unsupervised Learning</a></li>
-<li class="chapter" data-level="12.1.3" data-path="machine-learning.html"><a href="machine-learning.html#deep-learning-and-reinforcement-learning"><i class="fa fa-check"></i><b>12.1.3</b> Deep Learning and Reinforcement Learning</a></li>
+<li class="chapter" data-level="6.1.1" data-path="multiple-regression.html"><a href="multiple-regression.html#linearity-1"><i class="fa fa-check"></i><b>6.1.1</b> Linearity:</a></li>
+<li class="chapter" data-level="6.1.2" data-path="multiple-regression.html"><a href="multiple-regression.html#zero-conditional-mean-1"><i class="fa fa-check"></i><b>6.1.2</b> Zero conditional mean</a></li>
+<li class="chapter" data-level="6.1.3" data-path="multiple-regression.html"><a href="multiple-regression.html#independence-1"><i class="fa fa-check"></i><b>6.1.3</b> Independence:</a></li>
+<li class="chapter" data-level="6.1.4" data-path="multiple-regression.html"><a href="multiple-regression.html#homoscedasticity-1"><i class="fa fa-check"></i><b>6.1.4</b> Homoscedasticity:</a></li>
+<li class="chapter" data-level="6.1.5" data-path="multiple-regression.html"><a href="multiple-regression.html#sample-variation-1"><i class="fa fa-check"></i><b>6.1.5</b> Sample Variation</a></li>
+<li class="chapter" data-level="6.1.6" data-path="multiple-regression.html"><a href="multiple-regression.html#normality-1"><i class="fa fa-check"></i><b>6.1.6</b> Normality</a></li>
 </ul></li>
-<li class="chapter" data-level="12.2" data-path="machine-learning.html"><a href="machine-learning.html#cross-validation"><i class="fa fa-check"></i><b>12.2</b> Cross Validation</a></li>
-<li class="chapter" data-level="12.3" data-path="machine-learning.html"><a href="machine-learning.html#machine-learning-algorithms"><i class="fa fa-check"></i><b>12.3</b> Machine Learning Algorithms</a></li>
-<li class="chapter" data-level="12.4" data-path="machine-learning.html"><a href="machine-learning.html#dealing-with-large-datasets"><i class="fa fa-check"></i><b>12.4</b> Dealing With Large Datasets</a></li>
-<li class="chapter" data-level="12.5" data-path="machine-learning.html"><a href="machine-learning.html#clustering"><i class="fa fa-check"></i><b>12.5</b> Clustering</a></li>
+<li class="chapter" data-level="6.2" data-path="multiple-regression.html"><a href="multiple-regression.html#multiple-regression-equation"><i class="fa fa-check"></i><b>6.2</b> Multiple Regression Equation</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="multiple-regression.html"><a href="multiple-regression.html#anova-table"><i class="fa fa-check"></i><b>6.2.1</b> ANOVA Table</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="multiple-regression.html"><a href="multiple-regression.html#hypothesis-testing"><i class="fa fa-check"></i><b>6.3</b> Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.4" data-path="multiple-regression.html"><a href="multiple-regression.html#model-fitness-and-predictive-power"><i class="fa fa-check"></i><b>6.4</b> Model Fitness and Predictive Power</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="multiple-regression.html"><a href="multiple-regression.html#adjusted-r-squared"><i class="fa fa-check"></i><b>6.4.1</b> Adjusted R-Squared</a></li>
+<li class="chapter" data-level="6.4.2" data-path="multiple-regression.html"><a href="multiple-regression.html#akaikes-information-criterion-aic"><i class="fa fa-check"></i><b>6.4.2</b> Akaike’s Information Criterion (AIC)</a></li>
+<li class="chapter" data-level="6.4.3" data-path="multiple-regression.html"><a href="multiple-regression.html#bayesian-information-criterion-bic"><i class="fa fa-check"></i><b>6.4.3</b> Bayesian Information Criterion (BIC)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="multiple-regression.html"><a href="multiple-regression.html#model-misspecification"><i class="fa fa-check"></i><b>6.5</b> Model Misspecification</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="multiple-regression.html"><a href="multiple-regression.html#heteroscedasticity"><i class="fa fa-check"></i><b>6.5.1</b> Heteroscedasticity</a></li>
+<li class="chapter" data-level="6.5.2" data-path="multiple-regression.html"><a href="multiple-regression.html#serial-correlation"><i class="fa fa-check"></i><b>6.5.2</b> Serial Correlation</a></li>
+<li class="chapter" data-level="6.5.3" data-path="multiple-regression.html"><a href="multiple-regression.html#multicollinearity"><i class="fa fa-check"></i><b>6.5.3</b> Multicollinearity</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="multiple-regression.html"><a href="multiple-regression.html#influence-analysis"><i class="fa fa-check"></i><b>6.6</b> Influence Analysis</a></li>
+<li class="chapter" data-level="6.7" data-path="multiple-regression.html"><a href="multiple-regression.html#regression-analysis-with-qualitative-data"><i class="fa fa-check"></i><b>6.7</b> Regression Analysis With Qualitative Data</a>
+<ul>
+<li class="chapter" data-level="6.7.1" data-path="multiple-regression.html"><a href="multiple-regression.html#dummy-varaibles-in-multiple-regression"><i class="fa fa-check"></i><b>6.7.1</b> Dummy Varaibles In Multiple Regression</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="logit-and-probit-models.html"><a href="logit-and-probit-models.html"><i class="fa fa-check"></i><b>7</b> Logit and probit Models</a></li>
+<li class="chapter" data-level="8" data-path="time-series-analysis.html"><a href="time-series-analysis.html"><i class="fa fa-check"></i><b>8</b> Time Series Analysis</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#trend-models"><i class="fa fa-check"></i><b>8.1</b> Trend Models</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#linear-trend-models"><i class="fa fa-check"></i><b>8.1.1</b> Linear Trend Models</a></li>
+<li class="chapter" data-level="8.1.2" data-path="time-series-analysis.html"><a href="time-series-analysis.html#log-linear-trend-models"><i class="fa fa-check"></i><b>8.1.2</b> Log-Linear Trend Models</a></li>
+<li class="chapter" data-level="8.1.3" data-path="time-series-analysis.html"><a href="time-series-analysis.html#major-limitation-of-trend-models"><i class="fa fa-check"></i><b>8.1.3</b> Major Limitation of Trend Models</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="time-series-analysis.html"><a href="time-series-analysis.html#arima-models"><i class="fa fa-check"></i><b>8.2</b> ARIMA Models</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#autoregressive-ar-processes"><i class="fa fa-check"></i><b>8.2.1</b> Autoregressive (AR) Processes</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="time-series-analysis.html"><a href="time-series-analysis.html#random-walk"><i class="fa fa-check"></i><b>8.3</b> Random Walk</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="time-series-analysis.html"><a href="time-series-analysis.html#unit-root-test"><i class="fa fa-check"></i><b>8.3.1</b> Unit Root Test</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="time-series-analysis.html"><a href="time-series-analysis.html#seasonality"><i class="fa fa-check"></i><b>8.4</b> Seasonality</a></li>
+<li class="chapter" data-level="8.5" data-path="time-series-analysis.html"><a href="time-series-analysis.html#cointegration"><i class="fa fa-check"></i><b>8.5</b> Cointegration</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="var-and-svar.html"><a href="var-and-svar.html"><i class="fa fa-check"></i><b>9</b> VAR and SVAR</a></li>
+<li class="chapter" data-level="10" data-path="panel-data-analysis.html"><a href="panel-data-analysis.html"><i class="fa fa-check"></i><b>10</b> Panel data Analysis</a></li>
+<li class="chapter" data-level="11" data-path="machine-learning.html"><a href="machine-learning.html"><i class="fa fa-check"></i><b>11</b> Machine Learning</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="machine-learning.html"><a href="machine-learning.html#introduction-to-machine-learning"><i class="fa fa-check"></i><b>11.1</b> Introduction to Machine Learning</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="machine-learning.html"><a href="machine-learning.html#some-packages"><i class="fa fa-check"></i><b>11.1.1</b> Some Packages</a></li>
+<li class="chapter" data-level="11.1.2" data-path="machine-learning.html"><a href="machine-learning.html#supervised-learning"><i class="fa fa-check"></i><b>11.1.2</b> Supervised Learning</a></li>
+<li class="chapter" data-level="11.1.3" data-path="machine-learning.html"><a href="machine-learning.html#unsupervised-learning"><i class="fa fa-check"></i><b>11.1.3</b> Unsupervised Learning</a></li>
+<li class="chapter" data-level="11.1.4" data-path="machine-learning.html"><a href="machine-learning.html#deep-learning-and-reinforcement-learning"><i class="fa fa-check"></i><b>11.1.4</b> Deep Learning and Reinforcement Learning</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="machine-learning.html"><a href="machine-learning.html#cross-validation"><i class="fa fa-check"></i><b>11.2</b> Cross Validation</a></li>
+<li class="chapter" data-level="11.3" data-path="machine-learning.html"><a href="machine-learning.html#machine-learning-algorithms"><i class="fa fa-check"></i><b>11.3</b> Machine Learning Algorithms</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="machine-learning.html"><a href="machine-learning.html#supervised-machine-learning-algorithms"><i class="fa fa-check"></i><b>11.3.1</b> Supervised Machine Learning Algorithms</a></li>
+</ul></li>
+<li class="chapter" data-level="11.4" data-path="machine-learning.html"><a href="machine-learning.html#dealing-with-large-datasets"><i class="fa fa-check"></i><b>11.4</b> Dealing With Large Datasets</a></li>
+<li class="chapter" data-level="11.5" data-path="machine-learning.html"><a href="machine-learning.html#clustering"><i class="fa fa-check"></i><b>11.5</b> Clustering</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -172,45 +203,45 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="multiple-regression" class="section level1 hasAnchor" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Multiple Regression<a href="multiple-regression.html#multiple-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="multiple-regression" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Multiple Regression<a href="multiple-regression.html#multiple-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This section extends the simple regression model. Recall that in the simple regression model there was on independent variable and one dependent variable, for instance, we determined that there was a relationship between the final mark one gets for any subject and the time they spend preparing for the subject. It is clear that not only the time one spend study will after their final grade but other factors like age, previous academic performance, tutor availability etc, will affect one’s grades.</p>
-<div id="multiple-regression-assumptions" class="section level2 hasAnchor" number="7.1">
-<h2><span class="header-section-number">7.1</span> Multiple Regression Assumptions<a href="multiple-regression.html#multiple-regression-assumptions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="linearity" class="section level3 hasAnchor" number="7.1.1">
-<h3><span class="header-section-number">7.1.1</span> Linearity:<a href="multiple-regression.html#linearity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="multiple-regression-assumptions" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Multiple Regression Assumptions<a href="multiple-regression.html#multiple-regression-assumptions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="linearity-1" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Linearity:<a href="multiple-regression.html#linearity-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The relationship between the dependent variable and the independent variable is linear. This means that the change in the dependent variable is proportional to the change in the independent variable. This assumption can be checked by creating a scatter plot of the data and visually assessing whether the data points appear to follow a straight line.</p>
 </div>
-<div id="zero-conditional-mean" class="section level3 hasAnchor" number="7.1.2">
-<h3><span class="header-section-number">7.1.2</span> Zero conditional mean<a href="multiple-regression.html#zero-conditional-mean" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="zero-conditional-mean-1" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Zero conditional mean<a href="multiple-regression.html#zero-conditional-mean-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Independent variable is uncorrelated with error term.</p>
 </div>
-<div id="independence" class="section level3 hasAnchor" number="7.1.3">
-<h3><span class="header-section-number">7.1.3</span> Independence:<a href="multiple-regression.html#independence" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="independence-1" class="section level3 hasAnchor" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Independence:<a href="multiple-regression.html#independence-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The residuals are independent. In particular, there is no correlation between consecutive residuals in time series data.</p>
 </div>
-<div id="homoscedasticity" class="section level3 hasAnchor" number="7.1.4">
-<h3><span class="header-section-number">7.1.4</span> Homoscedasticity:<a href="multiple-regression.html#homoscedasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="homoscedasticity-1" class="section level3 hasAnchor" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> Homoscedasticity:<a href="multiple-regression.html#homoscedasticity-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The variance of the residuals is constant across all levels of the independent variable. This means that the spread of the residuals is consistent across the range of the independent variable. This assumption can be checked by creating a residual plot and visually assessing whether the spread of the residuals appears to be constant.</p>
 </div>
-<div id="sample-variation" class="section level3 hasAnchor" number="7.1.5">
-<h3><span class="header-section-number">7.1.5</span> Sample Variation<a href="multiple-regression.html#sample-variation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="sample-variation-1" class="section level3 hasAnchor" number="6.1.5">
+<h3><span class="header-section-number">6.1.5</span> Sample Variation<a href="multiple-regression.html#sample-variation-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Random sampling.</p>
 </div>
-<div id="normality" class="section level3 hasAnchor" number="7.1.6">
-<h3><span class="header-section-number">7.1.6</span> Normality<a href="multiple-regression.html#normality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="normality-1" class="section level3 hasAnchor" number="6.1.6">
+<h3><span class="header-section-number">6.1.6</span> Normality<a href="multiple-regression.html#normality-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The residuals are normally distributed. This means that the distribution of the residuals should be symmetric and bell-shaped. This assumption can be checked by creating a histogram or a normal probability plot of the residuals and visually assessing whether the distribution appears to be normal</p>
 </div>
 </div>
-<div id="multiple-regression-equation" class="section level2 hasAnchor" number="7.2">
-<h2><span class="header-section-number">7.2</span> Multiple Regression Equation<a href="multiple-regression.html#multiple-regression-equation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="multiple-regression-equation" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Multiple Regression Equation<a href="multiple-regression.html#multiple-regression-equation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Considering the above relationship, We ignore tutor availability for now and incorporate it later as a dummy variable. Dummy variables will be explained in detail in a later section. The goal of multiple regression analysis is to determine the degree to which each independent variable influences the dependent variable. Specifically, it seeks to identify the linear relationship between the dependent variable and each independent variable, while controlling for the other independent variables in the model.</p>
 <p>To conduct multiple regression analysis with student marks as the dependent variable and hours studying plus other variables as independent, one would first collect data on these variables for a sample of students. This could be done through surveys, questionnaires, or other methods of data collection.</p>
 <p>Once the data has been collected, the next step is to create a multiple regression model. This involves specifying the equation that describes the linear relationship between the dependent variable and the independent variables. The equation takes the form:</p>
 <p><img src="bookdownproj_files/figure-html/3D-1.png" width="672" /></p>
 <p>By looking at the 3D scatterplot, we can see that there is a positive relationship between hours_studied and exam_score, and a positive relationship between attendance and exam_score, while holding homework_completed constant. This can be explained in terms of the multiple regression analysis, where the coefficients for hours_studied, attendance, and homework_completed represent the change in the response variable (exam_score) for a one-unit increase in the corresponding predictor variable, while holding all other predictors constant. In this example, we can say that for every one additional hour studied, the expected exam score increases by 10 points, while holding attendance and homework completed constant. Similarly, for every additional attendance, the expected exam score increases by 20 points, while holding hours studied and homework completed constant. The 3D scatterplot helps to visualize these relationships and understand the interaction between the predictors.</p>
-<div id="anova-table" class="section level3 hasAnchor" number="7.2.1">
-<h3><span class="header-section-number">7.2.1</span> ANOVA Table<a href="multiple-regression.html#anova-table" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="anova-table" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> ANOVA Table<a href="multiple-regression.html#anova-table" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The ANOVA (Analysis of Variance) table for multiple regression is a table that summarizes the results of a multiple regression analysis. The ANOVA table provides information on the amount of variability in the dependent variable that can be explained by the independent variables in the model. The ANOVA table is typically divided into two parts, the regression or explained part and the residual or unexplained part. These components are explained as follows:</p>
 <ul>
 <li>Total Sum of Squares (SST): The sum of squared deviations of the predicted values from the mean of the dependent variable. This represents the total variation in the dependent variable that can be explained by the independent variables in the model.</li>
@@ -262,29 +293,29 @@
 </tr>
 </tbody>
 </table>
-<div id="the-standard-error-of-estimate-see" class="section level4 hasAnchor" number="7.2.1.1">
-<h4><span class="header-section-number">7.2.1.1</span> The Standard Error of Estimate (SEE)<a href="multiple-regression.html#the-standard-error-of-estimate-see" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="the-standard-error-of-estimate-see" class="section level4 hasAnchor" number="6.2.1.1">
+<h4><span class="header-section-number">6.2.1.1</span> The Standard Error of Estimate (SEE)<a href="multiple-regression.html#the-standard-error-of-estimate-see" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The Standard Error of Estimate (SEE) is a statistical term that measures the average distance between the predicted values from a regression model and the actual values in the data set. It is also known as the root mean square error (RMSE) or the standard error of regression.</p>
 <p>In other words, SEE provides a measure of the accuracy of the predictions made by a regression model. It tells us how much the actual data points are expected to deviate from the predicted values by the model. A lower SEE value indicates that the regression model is more accurate in predicting the values of the dependent variable.</p>
 <p>SEE is calculated as the square root of the residual mean square (MSE), which is the sum of the squared differences between the predicted values and the actual values, divided by the degrees of freedom. The formula for SEE is:</p>
 <p><span class="math display">\[SEE = \sqrt{(MSR)}\]</span></p>
 <p>where <span class="math inline">\(MSE = \frac{SSR}{df}\)</span>, SSR is the sum of squared residuals, and df is the degrees of freedom. SEE is typically reported in the same units as the dependent variable and is often used as a measure of the quality of the fit of a regression model. It is important to note that SEE does not provide information about the validity of the regression model itself, but rather its predictive accuracy.</p>
 </div>
-<div id="the-coefficient-of-determination" class="section level4 hasAnchor" number="7.2.1.2">
-<h4><span class="header-section-number">7.2.1.2</span> The Coefficient of Determination<a href="multiple-regression.html#the-coefficient-of-determination" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="the-coefficient-of-determination" class="section level4 hasAnchor" number="6.2.1.2">
+<h4><span class="header-section-number">6.2.1.2</span> The Coefficient of Determination<a href="multiple-regression.html#the-coefficient-of-determination" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The coefficient of determination, denoted as R-squared <span class="math inline">\((R^2)\)</span>, is a statistical measure that represents the proportion of the variance in the dependent variable that is explained by the independent variables in a regression model. R-squared is calculated as the ratio of the explained variance to the total variance of the dependent variable.
 <span class="math display">\[R^2 = \frac{SSE}{SST}\]</span></p>
 <p>It ranges from 0 to 1, with higher values indicating a better fit of the regression model to the data. In other words, R-squared tells us how well the regression model fits the data, and how much of the variation in the dependent variable can be attributed to the independent variables included in the model. It is commonly used to evaluate the predictive power of a regression model. However, it is important to note that a high R-squared value does not necessarily mean that the regression model is a good fit for the data or that it has a strong predictive power. R-squared should be used in conjunction with other measures of goodness of fit and should be interpreted carefully in the context of the research question and the specific regression model being used.</p>
 </div>
-<div id="the-f-statistic" class="section level4 hasAnchor" number="7.2.1.3">
-<h4><span class="header-section-number">7.2.1.3</span> The F-Statistic<a href="multiple-regression.html#the-f-statistic" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="the-f-statistic" class="section level4 hasAnchor" number="6.2.1.3">
+<h4><span class="header-section-number">6.2.1.3</span> The F-Statistic<a href="multiple-regression.html#the-f-statistic" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>In multiple regression, the F-statistic is calculated from the Analysis of Variance (ANOVA) table and is used to test the overall significance of the regression model. The F-statistic measures the ratio of the explained variance to the unexplained variance in the dependent variable. It compares the variation in the dependent variable that can be explained by the independent variables in the regression model to the variation that cannot be explained by the model.
 The F-statistic is calculated as:</p>
 <p><span class="math display">\[F = \frac{(MSR / k)}{(MSE / (n - k - 1))} = \frac{MSE}{MSR}\]</span></p>
 <p>where <span class="math inline">\(MSE\)</span> is the mean square for regression, the explained part, <span class="math inline">\(k\)</span> is the number of independent variables in the model, <span class="math inline">\(MSR\)</span> is the mean square error or the residual sum of squares divided by the degrees of freedom, and <span class="math inline">\(n\)</span> is the sample size.</p>
 </div>
-<div id="example" class="section level4 hasAnchor" number="7.2.1.4">
-<h4><span class="header-section-number">7.2.1.4</span> Example<a href="multiple-regression.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="example" class="section level4 hasAnchor" number="6.2.1.4">
+<h4><span class="header-section-number">6.2.1.4</span> Example<a href="multiple-regression.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Complete the ANOVA table below and calculate the <span class="math inline">\(SEE\)</span>, <span class="math inline">\(R^2\)</span> and the <span class="math inline">\(F-Statistic\)</span>.</p>
 <table>
 <thead>
@@ -319,25 +350,25 @@ The F-statistic is calculated as:</p>
 </div>
 </div>
 </div>
-<div id="hypothesis-testing" class="section level2 hasAnchor" number="7.3">
-<h2><span class="header-section-number">7.3</span> Hypothesis Testing<a href="multiple-regression.html#hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="hypothesis-testing" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Hypothesis Testing<a href="multiple-regression.html#hypothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Hypothesis testing in multiple regression is used to determine whether the relationship between the independent variables and the dependent variable in a regression model is statistically significant. The hypothesis testing procedure involves formulating null and alternative hypotheses, calculating test statistics, and comparing the test statistics to critical values or p-values.</p>
 <p>The null hypothesis in multiple regression states that the regression coefficients of all the independent variables in the model are zero, indicating that there is no linear relationship between the independent variables and the dependent variable. The alternative hypothesis, on the other hand, states that at least one of the regression coefficients is not zero, indicating that there is a significant relationship between the independent variables and the dependent variable.</p>
 <p>The most commonly used test statistic in multiple regression is the F-test, which compares the explained variance in the regression model to the residual variance. The F-test measures the overall fit of the model and tests the null hypothesis that all of the regression coefficients are zero. A significant F-test indicates that at least one of the independent variables is significantly related to the dependent variable.</p>
 <p>In addition to the overall F-test, individual t-tests can be performed for each independent variable in the model to test whether the regression coefficient for that variable is significantly different from zero. The t-test measures the magnitude of the relationship between the independent variable and the dependent variable and tests the null hypothesis that the regression coefficient is zero.</p>
 <p>The results of hypothesis testing in multiple regression can be used to determine the significance of the independent variables in predicting the dependent variable, and to identify the most important predictors in the model. However, it is important to interpret the results carefully, taking into account the assumptions of the regression model and any potential issues with multicollinearity, heteroscedasticity, or other forms of model misspecification.</p>
 </div>
-<div id="model-fitness-and-predictive-power" class="section level2 hasAnchor" number="7.4">
-<h2><span class="header-section-number">7.4</span> Model Fitness and Predictive Power<a href="multiple-regression.html#model-fitness-and-predictive-power" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="model-fitness-and-predictive-power" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Model Fitness and Predictive Power<a href="multiple-regression.html#model-fitness-and-predictive-power" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The usual measure of goodness of fit include the coefficient of determination R-Squared, the Adjusted R-Squared, the Standard Error of Estimate (SEE), Residual plots, and the F-Test. We will also use the Bayesian Information Criterion (BIC) to test model and we will use the Akaike’s Information Criterion (AIC) to determine which models have better predictive power.</p>
-<div id="adjusted-r-squared" class="section level3 hasAnchor" number="7.4.1">
-<h3><span class="header-section-number">7.4.1</span> Adjusted R-Squared<a href="multiple-regression.html#adjusted-r-squared" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="adjusted-r-squared" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Adjusted R-Squared<a href="multiple-regression.html#adjusted-r-squared" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Goodness of fit in multiple regression refers to how well the regression model fits the observed data. It is a measure of the degree to which the model explains the variation in the dependent variable. There are several statistics that can be used to assess the goodness of fit of a multiple regression model. We have already discussed the <span class="math inline">\(R^2\)</span> which is also known as the coefficient of determination. The <span class="math inline">\(R^2\)</span> will always increase if more independent variables are added to the model and having more independent does not necessarily mean the model has gotten better. To deal with this issue, we will use the Adjusted R-squared. The Adjusted R-squared is a modified version of R-squared that takes into account the number of predictor variables in the model. It is a more accurate measure of goodness of fit than R-squared when there are many predictor variables.</p>
 <p><span class="math display">\[Adjusted \ R^2 = 1 - \Big[\big(\frac{n-1}{n-k-1}\times\big(1-R^2\big)\Big]\]</span>
 An increase in the Adjusted R-Squared implies that the particular variable maybe be significant.</p>
 </div>
-<div id="akaikes-information-criterion-aic" class="section level3 hasAnchor" number="7.4.2">
-<h3><span class="header-section-number">7.4.2</span> Akaike’s Information Criterion (AIC)<a href="multiple-regression.html#akaikes-information-criterion-aic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="akaikes-information-criterion-aic" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Akaike’s Information Criterion (AIC)<a href="multiple-regression.html#akaikes-information-criterion-aic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Akaike’s Information Criterion (AIC) is a measure of the goodness of fit of a statistical model that takes into account both the model’s ability to fit the data and its complexity. In multiple regression analysis, AIC is used to compare different regression models and determine which one is the best fit for the data.</p>
 <p>AIC is calculated as:</p>
 <p><span class="math display">\[AIC = n\times ln\Bigg(\frac{RSS}{n}\Bigg) + 2(k+1)\]</span>
@@ -345,8 +376,8 @@ if <span class="math inline">\(AIC_N &lt; AIC_M\)</span>, then model N is a bett
 <p>AIC is preferred for the predictive power of the model because it balances the trade-off between the model’s ability to fit the data and its complexity. A model that fits the data well but is too complex can overfit the data, which means that it may perform well on the training data but poorly on new data. On the other hand, a model that is too simple may underfit the data, which means that it may not capture the underlying relationships in the data and may have poor predictive power. AIC addresses this trade-off by penalizing models that are too complex and selecting models that fit the data well but are not overly complex. By selecting the model with the lowest AIC value, we can choose the model that is the best compromise between model fit and model complexity. Furthermore, AIC is a useful tool for model selection because it can be used to compare different models, even if they have different sets of independent variables. This allows us to choose the model that provides the best balance between goodness of fit and complexity, which is important for achieving good predictive power.</p>
 <p>AIC has several advantages over other measures of goodness of fit, such as R-squared and the F-test. First, AIC takes into account the complexity of the model, which means that it penalizes overfitting and avoids selecting models that are too complex and have too many parameters. Second, AIC can be used to compare models that have different numbers of parameters and variables. Finally, AIC can be used to compare non-nested models, which means that it can be used to compare models that have different sets of independent variables. However, it is important to note that AIC is not a definitive measure of the goodness of fit of a model and should be used in conjunction with other measures and subject matter expertise to make informed decisions about which model is the best fit for the data.</p>
 </div>
-<div id="bayesian-information-criterion-bic" class="section level3 hasAnchor" number="7.4.3">
-<h3><span class="header-section-number">7.4.3</span> Bayesian Information Criterion (BIC)<a href="multiple-regression.html#bayesian-information-criterion-bic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="bayesian-information-criterion-bic" class="section level3 hasAnchor" number="6.4.3">
+<h3><span class="header-section-number">6.4.3</span> Bayesian Information Criterion (BIC)<a href="multiple-regression.html#bayesian-information-criterion-bic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The Bayesian Information Criterion (BIC) is a measure of the goodness of fit of a statistical model that takes into account both the model’s ability to fit the data and its complexity. Like the AIC, the BIC is used to compare different models and determine which one is the best fit for the data.</p>
 <p>The BIC is calculated as:</p>
 <p><span class="math display">\[BIC = n\times ln\Bigg(\frac{RSS}{n}\Bigg) + ln(n)\times(k+1)\]</span>
@@ -355,30 +386,30 @@ if <span class="math inline">\(BIC_N &lt; BIC_M\)</span>, then model N is a bett
 <p>It is important to note that like the AIC, the BIC is not a definitive measure of the goodness of fit of a model and should be used in conjunction with other measures and subject matter expertise to make informed decisions about which model is the best fit for the data. However, the BIC is particularly useful in situations where parsimony is important, such as when dealing with high-dimensional data, as it tends to select models that strike a balance between goodness of fit and model complexity.</p>
 </div>
 </div>
-<div id="model-misspecification" class="section level2 hasAnchor" number="7.5">
-<h2><span class="header-section-number">7.5</span> Model Misspecification<a href="multiple-regression.html#model-misspecification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="model-misspecification" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Model Misspecification<a href="multiple-regression.html#model-misspecification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Model misspecification occurs when the statistical model used to analyze the data does not accurately reflect the true relationship between the variables being studied. This can happen for a variety of reasons, including incorrect functional form, missing variables, measurement error, and omitted interactions between variables.</p>
 <p>When a model is misspecified, the estimated parameters and statistical tests based on the model may be biased or inconsistent. For example, if a variable that should be included in the model is omitted, the coefficient estimates for the other variables in the model may be biased and inconsistent. Similarly, if the functional form of the model is incorrect, the estimated coefficients may be biased and the model may not accurately capture the true relationship between the variables.</p>
 <p>Model misspecification can have serious consequences for the conclusions drawn from the analysis. For example, if a variable is omitted from the model, the estimated effects of the other variables may be incorrect, leading to incorrect inferences about the relationships between the variables. This can lead to incorrect decisions being made based on the analysis.</p>
 <p>To avoid model misspecification, it is important to carefully consider the functional form of the model and to include all relevant variables in the analysis. Additionally, sensitivity analyses can be conducted to explore the effects of model misspecification and to test the robustness of the results to different modeling assumptions.</p>
-<div id="heteroscedasticity" class="section level3 hasAnchor" number="7.5.1">
-<h3><span class="header-section-number">7.5.1</span> Heteroscedasticity<a href="multiple-regression.html#heteroscedasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="heteroscedasticity" class="section level3 hasAnchor" number="6.5.1">
+<h3><span class="header-section-number">6.5.1</span> Heteroscedasticity<a href="multiple-regression.html#heteroscedasticity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Heteroscedasticity is a term used in statistics to describe a situation where the variance of the residuals (the differences between the observed values and the predicted values) is not constant across the range of values of the independent variable(s). In other words, the variability of the errors is different for different values of the predictor variable(s). This violates the assumption of homoscedasticity, which assumes that the variance of the residuals is constant for all levels of the independent variable(s).</p>
 <p>Heteroscedasticity can lead to biased and inefficient parameter estimates in regression analysis. In particular, the estimated standard errors of the regression coefficients may be incorrect, leading to incorrect inferences about the statistical significance of the coefficients. The problem is more pronounced when the sample size is small, as it may be more difficult to detect the heteroscedasticity and the standard errors may be more severely biased.</p>
 <p>Heteroscedasticity can arise for a variety of reasons, including outliers, measurement error, and omitted variables. It is often more likely to occur in cross-sectional data than in time series data.</p>
 <p>To detect heteroscedasticity, residual plots can be examined, such as a plot of the residuals against the fitted values or against each of the predictor variables. A formal test, such as the Breusch-Pagan or White test, can also be used to test for the presence of heteroscedasticity.</p>
 <p>If heteroscedasticity is detected, several methods can be used to address the problem, including transforming the dependent or independent variable(s), using weighted least squares regression, or using robust standard errors. The appropriate method depends on the specific situation and the goals of the analysis.</p>
 </div>
-<div id="serial-correlation" class="section level3 hasAnchor" number="7.5.2">
-<h3><span class="header-section-number">7.5.2</span> Serial Correlation<a href="multiple-regression.html#serial-correlation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="serial-correlation" class="section level3 hasAnchor" number="6.5.2">
+<h3><span class="header-section-number">6.5.2</span> Serial Correlation<a href="multiple-regression.html#serial-correlation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Serial correlation, also known as autocorrelation, is a statistical phenomenon that occurs when the error terms in a regression model are correlated with one another over time. This means that the error terms at one point in time are related to the error terms at another point in time, violating the assumption of independence of the error terms.</p>
 <p>Serial correlation can arise in time series data when there is some form of temporal dependence between the observations. For example, in financial data, stock prices may be positively correlated with their own past values, leading to positive serial correlation in the residuals of a regression model that uses stock prices as the dependent variable.</p>
 <p>Serial correlation can lead to biased and inefficient parameter estimates in regression analysis. In particular, the estimated standard errors of the regression coefficients may be incorrect, leading to incorrect inferences about the statistical significance of the coefficients. The problem is more pronounced when the serial correlation is strong, as it may be more difficult to detect the correlation and the standard errors may be more severely biased.</p>
 <p>To detect serial correlation, residual plots can be examined, such as a plot of the residuals against time or against their own lagged values. A formal test, such as the Durbin-Watson test, can also be used to test for the presence of serial correlation.</p>
 <p>If serial correlation is detected, several methods can be used to address the problem, including using autoregressive integrated moving average (ARIMA) models, incorporating lagged dependent variables or other predictors that capture the temporal dependence, or using Cochrane-Orcutt or feasible generalized least squares (FGLS) regression to correct for the correlation. The appropriate method depends on the specific situation and the goals of the analysis.</p>
 </div>
-<div id="multicollinearity" class="section level3 hasAnchor" number="7.5.3">
-<h3><span class="header-section-number">7.5.3</span> Multicollinearity<a href="multiple-regression.html#multicollinearity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="multicollinearity" class="section level3 hasAnchor" number="6.5.3">
+<h3><span class="header-section-number">6.5.3</span> Multicollinearity<a href="multiple-regression.html#multicollinearity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Multicollinearity is a statistical phenomenon that occurs when two or more independent variables in a regression model are highly correlated with each other. This means that there is a linear relationship between the independent variables, which can lead to problems in the estimation of the regression coefficients and the interpretation of the results.</p>
 <p>Multicollinearity can arise when the independent variables are measuring similar or related concepts. For example, in a regression model that predicts a person’s income, both education level and years of experience in the workforce might be included as independent variables. These two variables are likely to be correlated with each other because people with more education tend to have more experience in the workforce. This correlation can lead to multicollinearity in the regression model.</p>
 <p>Multicollinearity can lead to biased and unstable estimates of the regression coefficients, making it difficult to interpret the importance of each independent variable in predicting the dependent variable. Additionally, the standard errors of the regression coefficients may be inflated, leading to incorrect inferences about the statistical significance of the coefficients.</p>
@@ -386,18 +417,18 @@ if <span class="math inline">\(BIC_N &lt; BIC_M\)</span>, then model N is a bett
 <p>To address multicollinearity, several methods can be used, including removing one or more of the highly correlated variables, combining the variables into a single variable using factor analysis or principal components analysis, or using regularization methods such as ridge regression or lasso regression. The appropriate method depends on the specific situation and the goals of the analysis.</p>
 </div>
 </div>
-<div id="influence-analysis" class="section level2 hasAnchor" number="7.6">
-<h2><span class="header-section-number">7.6</span> Influence Analysis<a href="multiple-regression.html#influence-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="influence-analysis" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Influence Analysis<a href="multiple-regression.html#influence-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Influence analysis is a technique used in regression analysis to identify influential observations, which are observations that have a disproportionately large impact on the estimated regression coefficients or other diagnostic measures. Influential observations can arise due to outliers, leverage points, or other factors that affect the model assumptions or the statistical properties of the estimation method.</p>
 <p>Influence analysis typically involves computing various diagnostic measures, such as Cook’s distance, DFFITS, or leverage values, for each observation in the dataset. These measures quantify the impact of each observation on the model fit, and can be used to identify observations that are potentially influential.</p>
 <p>Cook’s distance, for example, measures the change in the estimated regression coefficients when a particular observation is removed from the dataset. An observation with a high Cook’s distance indicates that removing that observation would lead to a significant change in the estimated coefficients, and may be considered influential. Similarly, DFFITS measures the impact of each observation on the estimated regression coefficients and standard errors, and can be used to identify observations that have a large effect on the overall model fit.</p>
 <p>Leverage values, on the other hand, measure how much an observation’s predictor values differ from the average predictor values in the dataset. Observations with high leverage values have predictor values that are far from the average, and can have a large impact on the estimated regression coefficients.</p>
 <p>Once influential observations are identified, various methods can be used to deal with them. One approach is to remove the influential observations from the analysis, but this should be done carefully to avoid biasing the results. Alternatively, robust regression methods can be used that are less sensitive to influential observations, such as M-estimation or weighted least squares.</p>
 </div>
-<div id="regression-analysis-with-qualitative-data" class="section level2 hasAnchor" number="7.7">
-<h2><span class="header-section-number">7.7</span> Regression Analysis With Qualitative Data<a href="multiple-regression.html#regression-analysis-with-qualitative-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="dummy-varaibles-in-multiple-regression" class="section level3 hasAnchor" number="7.7.1">
-<h3><span class="header-section-number">7.7.1</span> Dummy Varaibles In Multiple Regression<a href="multiple-regression.html#dummy-varaibles-in-multiple-regression" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="regression-analysis-with-qualitative-data" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Regression Analysis With Qualitative Data<a href="multiple-regression.html#regression-analysis-with-qualitative-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="dummy-varaibles-in-multiple-regression" class="section level3 hasAnchor" number="6.7.1">
+<h3><span class="header-section-number">6.7.1</span> Dummy Varaibles In Multiple Regression<a href="multiple-regression.html#dummy-varaibles-in-multiple-regression" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 
 </div>
 </div>

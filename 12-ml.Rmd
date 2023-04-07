@@ -1,4 +1,4 @@
-# Machine Learning
+# Machine Learning Basics
 
 How do we communicate the patterns of desired behavior for baking bread? We can teach:
 
@@ -13,6 +13,10 @@ Statistical approaches and machine learning techniques are both ways of understa
 ## Introduction to Machine Learning
 
 There are three types of machine learning: supervised learning, unsupervised learning, and deep learning/reinforcement learning.
+
+### Some Packages
+
+
 
 ### Supervised Learning
 
@@ -46,11 +50,89 @@ In unsupervised learning, the emphasis is on finding hidden structures or patter
 
 ## Machine Learning Algorithms
 
+### Supervised Machine Learning Algorithms
+
+#### Penalised Regression
+
+##### Regularization
+
+
+#### Support Vector Machine
+
+#### K-Nearest Neighbour
+
+#### Classification and Regresion Trees (CART)
+
+#### Ensemble
+
+##### Random forest
+
+
+### Supervised Machine Learning Algorithms
+
+#### Dimension Reduction
+
+##### Principal Components Analysis (PCA)
+
+Scree Plot
+
+
+#### Clustering
+
+##### K-Means Clustering
+
+
+##### Hierarchical Clustering
+
+Agglomerative clustering and divisive clustering are two popular approaches to hierarchical clustering, which is a type of unsupervised machine learning used for grouping similar data points together.
+
+Agglomerative clustering, also known as bottom-up clustering, starts with each data point as a separate cluster and then iteratively merges the closest pairs of clusters until all data points belong to a single cluster. This process results in a dendrogram, which is a tree-like structure that shows how the clusters are formed. Agglomerative clustering is computationally efficient and can handle a large number of data points. It is also relatively easy to interpret and visualize the results.
+
+Divisive clustering, also known as top-down clustering, takes the opposite approach. It starts with all data points belonging to a single cluster and then recursively splits the clusters into smaller clusters until each data point belongs to its own cluster. This process also results in a dendrogram, but it can be computationally expensive, especially when dealing with large datasets. Divisive clustering can be more difficult to interpret and visualize than agglomerative clustering, but it can be more effective in identifying clusters that are well-separated.
+
+In summary, agglomerative clustering and divisive clustering are two approaches to hierarchical clustering that differ in the way they group similar data points together. Agglomerative clustering is a bottom-up approach that iteratively merges the closest pairs of clusters, while divisive clustering is a top-down approach that recursively splits the clusters into smaller clusters.
+
+## Deep Learning
+
+### Artificial Neural Networks (ANN)
+
+### Deep Learning Nets (DLN)
+
+
+### Reinforcement Learning
+
+In 2016, DeepMind, a subsidiary of Alphabet Inc., achieved a major breakthrough in artificial intelligence (AI) by creating a computer program named AlphaGo, which defeated the world champion in the ancient Chinese board game Go. This was a significant accomplishment because Go is considered to be one of the most challenging games for AI due to its vast number of possible moves.
+
+Reinforcement learning was one of the primary methods used by AlphaGo to learn how to play the game at an expert level. Reinforcement learning is a subfield of machine learning that involves an agent learning how to make decisions in an environment by receiving feedback in the form of rewards or penalties. In the case of AlphaGo, the environment was the Go board, and the rewards were points earned for winning the game.
+
+The development of AlphaGo consisted of two main stages: training and playing. During the training stage, the program used a combination of supervised learning and reinforcement learning to learn the basic rules and strategies of the game. It was fed a massive dataset of expert-level games to learn from, and its neural networks were trained to predict the next best move given a particular board state.
+
+In the playing stage, AlphaGo used reinforcement learning to improve its gameplay further. It was pitted against itself in numerous games and received rewards for winning and penalties for losing. The program's neural networks learned from each game, adapting and evolving to improve its gameplay. Through this process, AlphaGo gradually became more skilled and capable of beating even the world's best Go players.
+
+One of the key innovations that enabled AlphaGo's success was the use of a technique called Monte Carlo tree search. This algorithm enabled AlphaGo to explore a vast number of possible moves and board states, allowing it to make more informed decisions and ultimately defeat human players.
+
+In conclusion, reinforcement learning played a critical role in enabling AlphaGo to beat the world champion in Go. By training on expert-level games and receiving rewards for winning and penalties for losing, AlphaGo's neural networks learned to play the game at an expert level. This is a significant achievement in the field of AI and demonstrates the potential of reinforcement learning in solving complex problems.
 
 
 ## Dealing With Large Datasets
 
+R can be used for Big Data analysis, but it requires special techniques and tools to handle large datasets. R is an open-source programming language that is widely used for statistical computing and graphics. However, it was not originally designed for Big Data analysis, and its memory limitations can make it challenging to work with large datasets that do not fit into the memory of a single machine.
+
+To overcome these limitations, several tools and packages have been developed to allow R to work with Big Data. Some of these tools and packages include:
+
+Distributed computing frameworks: R can be integrated with distributed computing frameworks like Apache Hadoop and Apache Spark to handle large datasets that are distributed across multiple machines.
+
+Parallel computing: R provides several packages that support parallel computing, such as parallel, snow, and foreach, which can help speed up computations on large datasets.
+
+Memory-efficient data structures: R also provides packages such as data.table and dplyr that allow for efficient manipulation of large datasets in memory.
+
+Database connectivity: R can connect to various databases, such as MySQL, Oracle, and PostgreSQL, to work with large datasets stored in a database.
+
+Cloud-based solutions: Cloud-based solutions, such as Amazon Web Services (AWS) and Microsoft Azure, offer Big Data services that integrate with R, allowing for large-scale data analysis and processing.
+
+In summary, R can be used for Big Data analysis, but it requires additional tools and techniques to handle large datasets efficiently.
+
+## Evaluating Model Performance
 
 
-## Clustering
 

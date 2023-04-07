@@ -1,1 +1,15 @@
 # Descriptive studies
+
+Descriptive studies are a type of observational study in which researchers collect and summarize information about a group of individuals or a particular phenomenon. The goal of descriptive studies is to provide a comprehensive and detailed account of the characteristics, behaviors, or attitudes of the study population.
+
+Descriptive studies are often used in the early stages of research to identify trends, patterns, and associations in the data. They may also be used to generate hypotheses for further investigation. Some common examples of descriptive studies include:
+
+Cross-sectional studies: In cross-sectional studies, data are collected at a single point in time. These studies can be used to estimate the prevalence of a particular disease or behavior in a population.
+
+Cohort studies: In cohort studies, a group of individuals who share a common characteristic (such as age or exposure to a particular substance) are followed over time to observe the occurrence of a particular outcome.
+
+Case-control studies: In case-control studies, individuals with a particular outcome (such as a disease) are compared to individuals without the outcome to identify factors that may be associated with the outcome.
+
+Surveys: Surveys are a type of descriptive study in which data are collected from a sample of individuals using standardized questionnaires or interviews.
+
+Descriptive studies are useful for providing a snapshot of the characteristics or behaviors of a population, but they cannot be used to establish cause-and-effect relationships. In order to establish causality, researchers must use experimental designs in which variables are manipulated and controlled. Nonetheless, descriptive studies are an important tool in research, and they can help guide the development of further research questions and hypotheses.

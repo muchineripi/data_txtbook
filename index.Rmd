@@ -5,11 +5,14 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Preface
+
+# Preface {-}
+
+```{r child = 'preface.Rmd', eval = FALSE, results = 'asis'}
+
+```
 
 (This guide is put together as part of an R textbook series)
 
 
 To my students who dared to learn. If you were perfect, you would have no reason to keep going but because you are imperfect, it is the perfect reason to keep trying. There is a place for you in world so keep moving!
-
-

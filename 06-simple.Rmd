@@ -96,24 +96,12 @@ For a given population, equation (1) defines the simple linear regression model 
 
 We will use the hours of study and marks dataset to understand ordinary least squares regression, simply known as OLS. The idea behind OLS is to find a linear relationship that minimizes the sum of the squared residuals or errors. The values we have from our sample are the actual values and the values obtained by estimating a straight line are called the predicted values. The residual or the error is the difference between the actual values and the estimated values. Consider the values give in the table below that we have have already used to get our scatter plot. 
 
+Table: Student Marks and Hours Studied Per Week <b>
 
-| Hours/week   |  Marks |
-|-------------:|-------:|
-|   2          |  5     |
-|   4          | 15     |
-|   5          | 15     |
-|   5          | 18     |
-|   7          | 25     |
-|   8          | 28     |
-|   9          | 39     |
-|  10          | 45     |
-|  10          | 44     |
-|  11          | 55     |
-|  12          | 63     |
-|  12          | 65     |
-|  13          | 72     |
-|  14          | 79     |
-|  15          | 82     |
+| Hours/Week (X) | 2 | 4 | 5 | 5 | 7 | 8 | 9 | 10 | 10 | 11 | 12 | 12 | 13 | 14 | 15 |
+|----------------|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|
+| Marks (Y)       | 5 | 15| 15| 18| 25| 28| 39| 45 | 44 | 55 | 63 | 65 | 72 | 79 | 82 |
+
 
 The equation that relates these variables is given by:
 
@@ -152,3 +140,29 @@ ggplot(data = mark_sheet, aes(x = X, y = Y)) +
 ```
 
 The difference between the actual observed points and the estimated line is what we are calling the residual. 
+
+## Simple Linear Regression Assumptions
+
+### Linearity: 
+
+The relationship between the dependent variable and the independent variable is linear. This means that the change in the dependent variable is proportional to the change in the independent variable. This assumption can be checked by creating a scatter plot of the data and visually assessing whether the data points appear to follow a straight line.
+
+
+### Zero conditional mean
+
+Independent variable is uncorrelated with error term. 
+
+### Independence: 
+
+The residuals are independent. In particular, there is no correlation between consecutive residuals in time series data.
+
+### Homoscedasticity: 
+
+The variance of the residuals is constant across all levels of the independent variable. This means that the spread of the residuals is consistent across the range of the independent variable. This assumption can be checked by creating a residual plot and visually assessing whether the spread of the residuals appears to be constant.
+
+### Sample Variation
+
+
+### Normality
+
+The residuals are normally distributed. This means that the distribution of the residuals should be symmetric and bell-shaped. This assumption can be checked by creating a histogram or a normal probability plot of the residuals and visually assessing whether the distribution appears to be normal
