@@ -94,13 +94,17 @@ For a given population, equation (1) defines the simple linear regression model 
 
 ## Ordinary Least Squares Estimations
 
-We will use the hours of study and marks dataset to understand ordinary least squares regression, simply known as OLS. The idea behind OLS is to find a linear relationship that minimizes the sum of the squared residuals or errors. The values we have from our sample are the actual values and the values obtained by estimating a straight line are called the predicted values. The residual or the error is the difference between the actual values and the estimated values. Consider the values give in the table below that we have have already used to get our scatter plot. 
+We will use the hours of study and marks dataset to understand ordinary least squares regression, simply known as OLS. The idea behind OLS is to find a linear relationship that minimizes the sum of the squared residuals or errors. The values we have from our sample are the actual values and the values obtained by estimating a straight line are called the predicted values. The residual or the error is the difference between the actual values and the estimated values.  
 
-Table: Student Marks and Hours Studied Per Week <b>
+<div style="border: 1px solid black; padding: 15px;">
+<p><strong>Example 6.1:</strong></p>
 
-| Hours/Week (X) | 2 | 4 | 5 | 5 | 7 | 8 | 9 | 10 | 10 | 11 | 12 | 12 | 13 | 14 | 15 |
-|----------------|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|
-| Marks (Y)       | 5 | 15| 15| 18| 25| 28| 39| 45 | 44 | 55 | 63 | 65 | 72 | 79 | 82 |
+Consider the values give in the table below that we have have already used to get our scatter plot.
+Table: Student Marks and Hours Studied Per Week <br>
+
+|Hours| 2 | 4 | 5 | 5 | 7 | 8 | 9 | 10 | 10 | 11 | 12 | 12 | 13 | 14 | 15 |
+|-----|---|---|---|---|---|---|---|----|----|----|----|----|----|----|----|
+|Marks| 5 | 15| 15| 18| 25| 28| 39| 45 | 44 | 55 | 63 | 65 | 72 | 79 | 82 |
 
 
 The equation that relates these variables is given by:
@@ -140,6 +144,9 @@ ggplot(data = mark_sheet, aes(x = X, y = Y)) +
 ```
 
 The difference between the actual observed points and the estimated line is what we are calling the residual. 
+</div>
+<br>
+
 
 ## Simple Linear Regression Assumptions
 

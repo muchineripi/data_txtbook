@@ -118,9 +118,15 @@ where $MSE$ is the mean square for regression, the explained part, $k$ is the nu
 
 
 
-#### Example 
+<div style="border: 1px solid black; padding: 10px;">
+<p><strong>Example 7.1:</strong></p>
+Complete the ANOVA table below and calculate the following:
+<ol type="i">
+<li> $SEE$ </li>
+<li> $R^2$ </li>
+<li> $F-Statistic$ </li>
+</ol>
 
-Complete the ANOVA table below and calculate the $SEE$, $R^2$ and the $F-Statistic$. 
 ```{r anova_2, include=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Create ANOVA table
@@ -135,6 +141,13 @@ anova_table2 <- data.frame(
 knitr::kable(anova_table2, align = "c")
 
 ```
+
+
+Solution:
+
+</div>
+
+
 
 ## Hypothesis Testing
 
@@ -184,6 +197,17 @@ if $BIC_N < BIC_M$, then model N is a better predictor. <br>
 The BIC value for a model is a relative measure of its goodness of fit, with lower values indicating a better fit. However, unlike the AIC, the BIC places a stronger penalty on the number of parameters in the model. As a result, the BIC tends to select simpler models than the AIC, and is therefore preferred when parsimony is a priority.
 
 It is important to note that like the AIC, the BIC is not a definitive measure of the goodness of fit of a model and should be used in conjunction with other measures and subject matter expertise to make informed decisions about which model is the best fit for the data. However, the BIC is particularly useful in situations where parsimony is important, such as when dealing with high-dimensional data, as it tends to select models that strike a balance between goodness of fit and model complexity.
+
+<div style="border: 1px solid black; padding: 10px;">
+<p><strong>Example 7.2:</strong></p>
+Compare R-Squared, Adjused R-Squared, AIC and BIC
+<ol>
+<li>Calculate the sum of 5 and 7.</li>
+<li>Create a vector of the numbers 1 to 10.</li>
+<li>Plot the sine function from 0 to 2π.</li>
+</ol>
+</div>
+
 
 ## Model Misspecification
 

@@ -108,3 +108,6 @@ artificial-neural-networks-ann
 deep-learning-nets-dln
 reinforcement-learning
 evaluating-model-performance
+kinds-of-learning
+food-for-thought-whats-something-youve-learned-by-instruction-by-example-by-reinforcement
+food-for-thought

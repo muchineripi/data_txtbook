@@ -1,12 +1,70 @@
 # Machine Learning Basics
 
-How do we communicate the patterns of desired behavior for baking bread? We can teach:
+<div style="border: 1px solid #ccc; padding: 10px; background-color: #fce4ec;">
+  <strong>What is learning?:</strong> 
+  Learning is the process of acquiring knowledge, skills, behaviors, or attitudes through experience, study, or instruction.
+</div>
+ <br>
 
-- by instruction: "to make bread, you need flour, yeast, salt, and water. Mix them together and knead the dough for 10 minutes."
-- by example: "here are six loaves of perfect bread; here, six loaves of burnt bread. see a pattern?"
-- by reinforcement: "bake bread every day for a month; learn from the texture, color, and taste of each loaf."
+Learning involves a change in knowledge, understanding, or behavior resulting from exposure to new information, experiences, or feedback. Learning can occur through a variety of mechanisms, including observation, experience, and instruction. It is a complex and dynamic process that involves cognitive, social, and emotional factors. Additionally, learning can take place consciously or unconsciously, and it can be intentional or unintentional. This is where it get's interesting, machines can learn too, &#x1F60A; which is the agenda for this topic. 
 
-Machine learning is the art of programming computers to learn from such sources, and in this case, it would involve teaching a machine learning algorithm to recognize the patterns of successful bread baking based on examples.
+<h5> Kinds of Learning </h5> 
+
+> How do we communicate patterns of desired behavior? We can teach:
+>
+> - by instruction: “to tell whether a mushroom is poisonous, first look at its gills...”
+> - by example: “here are six poisonous fungi; here, six safe ones. see a pattern?”
+> - by reinforcement: “eat foraged mushrooms for a month; learn from getting sick.”
+
+<style>
+blockquote {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 0.25em solid #ccc;
+  background-color: #f9f9f9;
+}
+</style>
+
+
+Consider the picture from wikihow.com below of poisonous mushrooms vs edible mushrooms:
+
+<h5 style="text-align:center;">Poisonous Vs Edible Mushrooms</h5>
+<p align="center">
+  <img src="edible-mushrooms.jpg" alt="mushrooms">
+</p>
+
+<p style="text-align:center;"> source: wikihow.com/Identify-Edible-Mushrooms#/ </p>
+
+
+Machine learning is the art of programming computers to learn from such sources and in this case, it would involve teaching a machine learning algorithm to recognize the patterns of successfully identifying poisonous and edible mushrooms. We’ll focus on the most important case: learning from examples. 
+
+From the figure above, predicting weather mushrooms are poisonous or not, our learning program selects from a class of hypotheses (brown blob) a plausible hypothesis that well fits (no dots) a given list of poison-labeled mushrooms (pink blob with white dots). Evaluating the selected hypothesis on new mushrooms, we predict the corresponding poison levels. Selecting a hypothesis is called learning; predicting unseen poison levels, inference. The examples we learn from are training data; the new mushrooms and their true poison levels are testing data.
+
+Here is another example:
+
+> How do we communicate the patterns of desired behavior for baking bread? We can teach:
+>
+> - by instruction: "to make bread, you need flour, yeast, salt, and water. Mix them together and knead the dough for 10 minutes."
+> - by example: "here are six loaves of perfect bread; here, six loaves of burnt bread. see a pattern?"
+> - by reinforcement: "bake bread every day for a month; learn from the texture, color, and taste of each loaf."
+
+<style>
+blockquote {
+  margin: 1em 0;
+  padding: 1em;
+  border-left: 0.25em solid #ccc;
+  background-color: #f9f9f9;
+}
+</style>
+
+
+**Food for thought❓**
+
+Have you ever stopped to think about how you learn best? 
+Do you prefer to be taught step-by-step instructions, or do you learn better by seeing examples? 
+Or maybe you're a hands-on learner who needs reinforcement to really internalize a lesson?
+
+Think back to something you've learned recently, and ask yourself: did you learn it by instruction, by example, or by reinforcement? Understanding your own learning style can help you become a more effective learner and teacher, and can even improve your communication skills. So take a moment to reflect on your own learning experiences, and see what you can learn from them. You might be surprised at what you discover!
 
 Statistical approaches and machine learning techniques are both ways of understanding a process by analyzing observations, but they have different assumptions and methods. Statistical approaches use strict rules and models to explain observations, while machine learning is more flexible and uses large amounts of data to find patterns and make predictions without human input. Machine learning is particularly useful for complex problems with many variables or non-linear systems. This chapter introduces machine learning methodologies but does not get into too much detail. 
 
@@ -32,6 +90,15 @@ Regression and classification use different ML techniques, and there are many di
 
 The success of supervised learning algorithms is evaluated using test data, where the predicted values are compared to the actual values. If the algorithm can predict the values accurately for new data, it is considered to have learned from the labeled dataset.
 
+<div style="border: 1px solid black; padding: 10px;">
+<p><strong>Example 12.1:</strong></p>
+<ol>
+<li>Calculate the sum of 5 and 7.</li>
+<li>Create a vector of the numbers 1 to 10.</li>
+<li>Plot the sine function from 0 to 2π.</li>
+</ol>
+</div>
+
 ### Unsupervised Learning
 
 Unsupervised learning is a type of machine learning that involves finding patterns in a dataset without prior knowledge of the correct output or labeled data. Unlike supervised learning, there is no predetermined target variable or correct answer to work towards. Instead, unsupervised learning algorithms identify similarities and relationships between data points and group them together based on these similarities.
@@ -40,9 +107,26 @@ One common unsupervised learning technique is clustering, where data points are 
 
 In unsupervised learning, the emphasis is on finding hidden structures or patterns within the data that can be used for further analysis or decision-making. For example, unsupervised learning can be used to segment customers based on their purchasing behavior or to identify anomalies or outliers in financial transactions.
 
+<div style="border: 1px solid black; padding: 10px;">
+<p><strong>Example 12.2:</strong></p>
+<ol>
+<li>Calculate the sum of 5 and 7.</li>
+<li>Create a vector of the numbers 1 to 10.</li>
+<li>Plot the sine function from 0 to 2π.</li>
+</ol>
+</div>
+
 ### Deep Learning and Reinforcement Learning
 
 
+<div style="border: 1px solid black; padding: 10px;">
+<p><strong>Example 12.3:</strong></p>
+<ol>
+<li>Calculate the sum of 5 and 7.</li>
+<li>Create a vector of the numbers 1 to 10.</li>
+<li>Plot the sine function from 0 to 2π.</li>
+</ol>
+</div>
 
 ## Cross Validation
 
@@ -133,6 +217,7 @@ Cloud-based solutions: Cloud-based solutions, such as Amazon Web Services (AWS) 
 In summary, R can be used for Big Data analysis, but it requires additional tools and techniques to handle large datasets efficiently.
 
 ## Evaluating Model Performance
+
 
 
 

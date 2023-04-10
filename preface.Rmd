@@ -1,0 +1,12 @@
+---
+title: "A RUDIMENTARY GUIDE TO DATA ANALYSIS USING R"
+author: "Elias Muchineripi Mashayamombe"
+date: "April 2023"
+documentclass: book
+output: 
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+---
+
+

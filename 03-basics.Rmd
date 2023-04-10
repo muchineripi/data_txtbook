@@ -79,3 +79,6 @@ Note that in R, for loops are generally not as efficient as other types of loops
 
 We will get to the use of data, but it is important to note that you can do simulations without any data.
 
+
+
+
